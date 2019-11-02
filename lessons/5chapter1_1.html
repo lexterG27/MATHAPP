@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Place Value Through Millions</h2>
+            </div>
+
+            <div class="content">
+              <p>The figure below shows the 2010 census population of the different regions in the Philippines (National Statistics Office official website)</p>
+              <img src="../images/1.jpg" style="max-width: 100%" />
+              <p>Based from the given information, answer the following:</p>
+              <ol>
+                  <li>Which region has the largest population? How do you know that it is the largest?</li>
+                  <li>Which region has the smallest population? Why do you say that it is the smallest?</li>
+                  <li>Can you tell the population of Calabarzon? What about Eastern Visayas?</li>
+                  <li>How many students are there in your school? Can you imagine how large is the population of the Philippines?</li>
+              </ol>
+              <br>
+              <h3>EXPLORE</h3>
+                  <p>I. How big is a million? Can you think of an example that represents millions?</p>
+                  <p>Examples:</p>
+                    <img src="../images/2.jpg" style="max-width: 100%" /><br>This home cost more than a million
+                    <br>The Philippines has a growing number of commuters reaching up to million.
+
+                  <p>II. The table below is called a place value chart. Consider the table below and let us answer the question considered above. What do you observe in the chart?</p>
+                  <p>In the place value chart, notice that the digit are grouped into sets of three digits. Each group of three digifts is called a period. The word 'units;, 'thousands', and 'millions' among others, are used to name periods in our numeration system. For example, what is the value of 9 in the standard form 92337853? What about in the numerical 12609803? Notice that the place value of 9 in the numerals 92337853 is ten millions. Its value is 90 000 000. In 92337853, the place value of the digit of 9 is thousands and its value is 9000.</p>
+                  <br>
+                  <h3>EXPLAIN</h3>
+                  <p>Numbers are grouped into periods and are separated by spaces. Each period consist of three digits. Ones, tens, hundreds, thoudands , hundred thousands, millions and hundred millions are called place values. Place value referes to the position that a digit occupies in the numerals. The value of digits depends on its place in numeral. Further, the value of each place is ten times greater than the value of the place to its right. Consider the numeral 21 708 560. What digit and its value is the :<br>a. hundred thousands place? _________<br>b. millions place?_________<br>c. thousands place?_________<br>ten millions place?_________<br>ten thousands place?_________ </p>
+                  <p>Therefore, in the number 21 708 569.<br>a. The digit 7 is in the hundred thousands place and its value is 700 000 or 7 hundred thousand.<br>b. The digit 1 is in the millions place and its value is 1 000 000 or 1 million.<br>c. The digit 8 is in the thousands place and its value is 8000 or 8 thousand.<br>d. The digit 2 is in the millions place and its value is 20 000 000 or 20 million.<br>e. The digit 0 is in the ten thousands place and its value is 0. The digit 0 has zero value but its used as a place holder.</p>
+
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+  <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

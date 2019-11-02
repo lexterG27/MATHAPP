@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h3>Lesson 1 - Place Value Through Ten Thousandths</h3>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>The science class was given a micrometer to measure the thickness of different leaves. The chart below shows the data recorded. What does 3 in each number mean?</p>
+              <table border="1" width="100%">
+                <tr>
+                  <th>Lead</th>
+                  <th>Thickness</th>
+                </tr>
+                <tr>
+                  <td>upo leaf</td>
+                  <td>0.3157 cm</td>
+                </tr>
+                <tr>
+                  <td>gumamela lead leaf</td>
+                  <td>0.0329 cm</td>
+                </tr>
+                <tr>
+                  <td>talisay leaf</td>
+                  <td>0.2138 cm</td>
+                </tr>
+              </table>
+              <h3>EXPLORE</h3>
+              <p> To answer the question, let us use the place value chart below.</p>
+              <h3></h3>
+              <table border="1" width="100%" >
+                <tr>
+                  <th width="15%"></th>
+                  <th>Tenths</th>
+                  <th>Hundredths</th>
+                  <th>Thousandths</th>
+                  <th>Ten Thousandths</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>8</td>
+                </tr>
+
+              </table>
+              <br>
+              <p>The digit 3 in each number occupies a different place.<br><br><i>Answer:</i> 3 in 0.3157 means 3 x 1/10 = 3/10 or 0.3<br>3 in 0.0329 means 3 x 1/100 = 3/100 or 0.03<br>3 in 0.2138 means 3 x 1/1000 = 3/1000 or 0.003</p>
+              <h3>EXPLAIN</h3>
+              <p>The value of the tenths place is one-tenth the value of the ones place. The place to the left is ten times the place to its right. The decimal point dictates where the whole number part ends and where the decimal part begins. Whether to the left or to the right of the decimal point. the place value of a digit to the left is 10 times of that to the right; equivalently, the place value to the right is one-tenth of that to the left. To further understand the concept, let us study more examples.<br>Write the place value adn value of the underlined digit.<br>a. 5.<u>4</u>722</p>
+
+               <table border="1" width="100%" >
+                <tr>
+                  <th width="15%"></th>
+                  <th>Tenths</th>
+                  <th>Hundredths</th>
+                  <th>Thousandths</th>
+                  <th>Ten Thousandths</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>4</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                </table>
+
+                <br><p>Place Value: <b>tenths</b></p>
+                <p>Value: <b>0.4</b></p><br><br>
+                <p>b. 5.7<u>8</u>9</p>
+
+               <table border="1" width="100%" >
+                <tr>
+                  <th width="15%"></th>
+                  <th>Tenths</th>
+                  <th>Hundredths</th>
+                  <th>Thousandths</th>
+                  <th>Ten Thousandths</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td></td>
+                </tr>
+                </table>
+
+                <br><p>Place Value: <b>hundredths</b></p>
+                <p>Value: <b>0.08</b></p><br>
+
+                <p>c. 0.46<u>8</u>7</p>
+
+               <table border="1" width="100%" >
+                <tr>
+                  <th width="15%"></th>
+                  <th>Tenths</th>
+                  <th>Hundredths</th>
+                  <th>Thousandths</th>
+                  <th>Ten Thousandths</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>8</td>
+                  <td>7</td>
+                </tr>
+                </table>
+
+                <br><p>Place Value: <b>thousandths</b></p>
+                <p>Value: <b>0.008</b></p><br>
+
+                <p>d. 5.934<u>1</u></p>
+
+               <table border="1" width="100%" >
+                <tr>
+                  <th></th>
+                  <th>Tenths</th>
+                  <th>Hundredths</th>
+                  <th>Thousandths</th>
+                  <th>Ten Thousandths</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>9</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>1</td>
+                </tr>
+                </table>
+
+                <br><p>Place Value: <b>ten thousandths</b></p>
+                <p>Value: <b>0.0001</b></p><br><br>
+                <h3>Application and Problem Solving</h3>
+                <p>1. Ron spent P138.50 in grocery items at a store. Ater buying some groceries, he went to the bookstore. He bought a book that costs P63.25. In which of the two prices does 5 have a greater value?</p>
+                <p>2. Ralph, Richmond, Ronald, and Robert entered 3.2 km dash race. They all successfully finished the race within 18.49 min, 18.37 min, 18.25 min, and 18.41 min, respectively. Determine Ronald's place in the race. </p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

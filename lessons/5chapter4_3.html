@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h3>Lesson 3 - Rounding Decimals</h3>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Among the eight planets in the SOlar System, Mercury is the smallest and closest to the SUn with an orbital periood of about 116 days, which is much faster than any other planet. This rapid motion may have led to it being named after the Roman deity Mercury, the fast-flying messenger to the gods. Mercury revolves around the sun at a speed of about 48.8692 km per second. Round this number to the nearest tenths, hundredths and thousadths. </p>
+              <h3>EXPLORE</h3>
+              <p>Nearest Tenths</p>
+              <img src="../images/34.jpg" style="max-width: 100%" />
+              <p><b><i>Think</i></b> 6>5, so, round up.<br>Add 1 to the digit in the rounding place.<br>Drop all digits after the rounding place.</p>
+              <p><i>Answer:</i>48.9</p>
+              <br>
+              <p>Nearest hundredths</p>
+              <img src="../images/35.jpg" style="max-width: 100%" />
+              <p><b><i>Think</i></b> 9>5, so, round up.<br>Add 1 to the digit in the rounding place.<br>Drop all digits after the rounding place.</p>
+              <p><i>Answer:</i>48.87</p><br>
+              <p>Nearest thousandths</p>
+              <img src="../images/36.jpg" style="max-width: 100%" />
+              <p><b><i>Think</i></b> 2<5, so, round down.<br><br>Drop all digits after the rounding place.</p>
+              <p><i>Answer:</i>48.869</p><br>
+              <h3>EXPLAIN</h3>
+              <p>To round a decimal number, determine first the rounding place. Then look at the digit to the right of the rounding place. The digit u btge rounding place is the one that will either be rounded up or rounded down depending on the digit to its right. If it is 5 or greater, add 1 to the digit in the rounding place. If it less than 5, retain the digit in the rounding place. Do not forget to drop all the digits after the rounding place.<br>Here are some examples.<br>Round each decimal to the indicated place.</p>
+              <table border="1" width="100%$">
+              <tr>
+                <th></th>
+                <th>Nearest Tenths</th>
+                <th>Nearest Hundredths</th>
+                <th>Nearest Thousandths</th>
+              </tr>
+              <tr>
+                <td>8.4325</td>
+                <td>8.4</td>
+                <td>8.43</td>
+                <td>8.433</td>
+              </tr>
+              <tr>
+                <td>75.2751</td>
+                <td>75.3</td>
+                <td>75.28</td>
+                <td>75.275</td>
+              <tr>
+                <td>216.2537</td>
+                <td>216.3</td>
+                <td>216.25</td>
+                <td>216.254</td>
+              </tr>
+              </tr>
+              </table>
+
+              <h3>Applications and Problem Solving</h3>
+              <p>Two boxes for mailing are weighted at the post office. Box A weights 8.25 kg while Box B weights 8.225 kg. Which of the two boxes is heavier when the weights are rounded to the nearest tenths?</p>
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

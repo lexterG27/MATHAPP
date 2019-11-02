@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Equivalent Ratios</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Remember the pupil, Ivan, from lesson 2? The school year is about to end and he is now calculating his earnings from the library. To organize things, he made a list of his monthly earnings. This is because he wants to join his classmates in their summer getaway in Pansol, Laguna. He wants to know how much money he saves for the outing. Considering that he needs a total of 5,O0O.OO for school and other expenses and joining the outing would cost him P5O0.O0, do you think he has tough money to join the outing? Explain your reasoning. Below is the table of his monthly earnings from July to February:</p>
+
+
+              <table border="1" width="100%">
+              <tr>
+                <th>Month</th>
+                <th>Hours</th>
+                <th>Earnings</th>
+              </tr>
+                <tr>
+                  <td>July</td>
+                  <td>12</td>
+                  <td>₱600.00</td>
+                </tr>
+                <tr>
+                  <td>August</td>
+                  <td>19</td>
+                  <td>₱950</td>
+                </tr>
+                <tr>
+                  <td>September</td>
+                  <td>20</td>
+                  <td>₱1000</td>
+                </tr>
+                <tr>
+                  <td>October</td>
+                  <td>21</td>
+                  <td>₱1050</td>
+                </tr>
+                <tr>
+                  <td>December</td>
+                  <td>18</td>
+                  <td>₱900</td>
+                </tr>
+                <tr>
+                  <td>January</td>
+                  <td>16</td>
+                  <td>₱800</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>15</td>
+                  <td>₱750</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>15</td>
+                  <td>₱750</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Total</td>
+                  <td>₱6800</td>
+                </tr>
+                </table>
+                <p>Write the ratio of the number of hours he worked per month to his monthly earnings, then express each ratio in simplest form. What do you notice?</p>
+              <h3>EXPLORE</h3>
+              <p>As the saying goes, “All work and no play make Jack a dull boy”. As for Ivan, if he has no other financial obligations, he may join the outing. However, he has to make sure that he will be able to save money for the next school year. The table on the next page shows the simplest form of the ratio of the number of hours that Ivan worked per month to his monthly earnings: </p>
+
+
+              <table border="1" width="100%">
+              <tr>
+                <th>Month</th>
+                <th>Hours</th>
+                <th>GCF</th>
+                <th>Simplest Form</th>
+              </tr>
+              <tr>
+                <td>Jul</td>
+                <td>12:600</td>
+                <td>12</td>
+                <td>12/600+12/12=1/50</td>
+              </tr>
+              <tr>
+                <td>Aug</td>
+                <td>19:950</td>
+                <td>19</td>
+                <td>19/950+19/19=1/50</td>
+              </tr>
+              <tr>
+                <td>Sep</td>
+                <td>20:1000</td>
+                <td>20</td>
+                <td>20/1000+20/20=1/50</td>
+              </tr>
+              <tr>
+                <td>Oct</td>
+                <td>21:1050</td>
+                <td>21</td>
+                <td>21/1050+21/21=1/50</td>
+              </tr>
+              <tr>
+                <td>Nov</td>
+                <td>18:900</td>
+                <td>16</td>
+                <td>18/900+18/18=1/50</td>
+              </tr>
+              <tr>
+                <td>Dec</td>
+                <td>16:800</td>
+                <td>16</td>
+                <td>16/800+16/16=1/50</td>
+              </tr>
+              <tr>
+                <td>Jan</td>
+                <td>15:750</td>
+                <td>15</td>
+                <td>15/750+15/15=1/50</td>
+              </tr>
+              <tr>
+                <td>Feb</td>
+                <td>15:750</td>
+                <td>15</td>
+                <td>15/750+15/15=1/50</td>
+              </tr>
+              </table>
+
+              <p>Notice that the simplest form of all the given ratios is  The simplest forms of all the ratios are equal. 50</p>
+
+              <h3>EXPLAIN</h3>
+              <p>If the simplest form of two or more ratios are the same or equal, then the ratios are equivalent. To know if two or more ratios are equivalent, you can express them in simplest form. <br><br><b>Example 1</b> Tell whether the given ratios are equivalent.</p>
+
+              <p> <b>15/60</b> and <b>5/20</b></p>
+
+              <table border="1" width="100%"> 
+                <tr>
+                  <td>For 15/60 the GCF is 15<br> 15/60+15/15=1/4<br> The simplest form of 15/60 is <b>1/4</b></td>
+                  <td>For 5/20 the GCF is 5.<br>5/20+5/5=1/4<br>The simplest of 5/20 is <b>1/4</b></td>
+                </tr>
+              </table>
+              <p>The simplest from are both equal to 1/4. Therefore the given ratios are equivalent.</p>
+
+              <p><b>Example 2</b></p>
+              <p> <b>16/12</b> and <b>75/100</b></p>
+
+              <table border="1" width="100%"> 
+                <tr>
+                  <td>For 16/12 the GCF is 4<br> 16/12+4/4=4/3<br> The simplest form of 16/12 is <b>4/3</b></td>
+                  <td>For 75/100 the GCF is 25.<br>75/100+25/25=3/4<br>The simplest of 75/100 is <b>1/4</b></td>
+                </tr>
+              </table>
+              <p>The simplest foom are  NOT equal; the given ratios are NOT equivalent.</p>
+              <h3>Application and Problem Solving</h3>
+              <p>Willy estimates that when his car travels 570 km, it consumes 60 liters of gasoline. How many liters of gasoline are needed if he intends to travel at a distance of 190km?</p>
+
+              </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

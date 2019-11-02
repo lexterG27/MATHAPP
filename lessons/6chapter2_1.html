@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Addition and Subtraction of Decimals</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Miss Cruz asked her two pupils to write on the board the proper way of reading the decimal number 35.008. The two pupils gave their answers as shown below.</p>
+              <table border="1" width="100%">
+                <tr> 
+                  <th>Name of Pupil</th>
+                  <th>Answer</th>
+                </tr>
+                <tr>
+                  <td>Rachel</td>
+                  <td>thirty-five and eight thousandths</td>
+                </tr>
+                  <td>Wally</td>
+                  <td>thirty-five eight thousandths</td>
+                <tr>
+                </tr>
+              </table>
+              <h3>EXPLORE</h3>
+              <p>To answer the question, let us use the place value chart below to represent the decimal number property.</p>
+              <table border="1" width="100%">
+                <tr> 
+                  <th colspan="3">Whole Numbers</th>
+                </tr>
+                <tr>
+                  <td>Tens</td>
+                  <td>Ones</td>
+                  <td>Decimal Point</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>.</td>
+                </tr>   
+              </table>
+
+              <br>
+
+              <table border="1" width="100%">
+                <tr> 
+                  <th colspan="3">Decimal Part</th>
+                </tr>
+                <tr>
+                  <td>Tenths</td>
+                  <td>Hundredths</td>
+                  <td>Thousandths</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>8</td>
+                </tr>   
+              </table>
+              <p>A decimal point separates the whole number and the decimal part of a decimal number. It is read as “and”. Thus, the decimal number 35.008 is read as “thirty-five and eight thousandths.” <br><br><b>Therefore, among the two pupils, Rachel gave the correct answer.</b></p>
+
+              <h3>EXPLAIN</h3>
+              <p>The word <i>decimal</i> comes from the Latin word <i>decima</i>, meaning tenth part. Although we are using different notation, we are still considering the nonnegative rational numbers. <br><br>In Chemistry, the atomic mass of hydrogen is 1.007984 amu. Use the place value chart to read and understand this decimal number.</p>
+              <img src="../images/58.jpg" style="max-width: 100%" />
+              <p>Use the place value chart to find the value of each digit of the atomic mass.</p>
+              <img src="../images/59.jpg" style="max-width: 100%" />
+              <blockquote class="bordered">
+                Read: one and seven hundred ninety-four hundred thousandths<br><b>Standard Form:</b> 1.00794 <br><b>Expanded Form: </b>(1 x 1) + (0 x 0.1) + (0 x 0.01) + (7 x 0.001) + (9 x 0.0001) + (4 x 0.00001) <br><br>= 1 + 0 + 0 + 0.007 + 0.0009 + 0.00004
+              </blockquote>
+              <blockquote class="bordered">
+              <p><i>Example 1</i><br>Write a word name for <b>111.11</b>.<br>One hundred eleven and eleven hundredths.</p>
+              </blockquote>
+
+              <blockquote class="bordered">
+              <p><i>Example 2</i><br>Write <b>225.013</b> in words.<br>Two hundred twenty-five and thirteen thousandths.</p>
+              </blockquote>    
+  
+
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

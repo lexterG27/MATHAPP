@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - 3 Types of Proportion</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>In the relief operations for typhoon victims, 120 families in the evacuation center had consumed 1500 kilos of NFA rice for 3 weeks. If there were only 1000 kilos of NFA rice, how long will the families consume this volume of rice?</p>
+              <h3>EXPLORE</h3>
+              <p>This problem clearly shows the relationship among the number of families, the number of kilos of rice and the number of days to consume the rice. From the given situation above, we can see that the more the kilos of rice there is, the longer it will last for 120 families. This situation is an example of a direct proportion. Thus, we have</p>
+              <img src="../images/70.jpg" style="max-width: 100%" />
+              <p>Therefore, 1000kilos of NFA rice will be consumed in 2 weeks.</p>
+              <h3>EXPLAIN</h3>
+              <p>In a direct proportion, as one quantity increases, the other quantity increases at the same rate and vice versa. <br><br>Can you cite an example of real-life situation that involves direct proportion?<br><br>In an inverse proportion, one quantity increases as the other quantity decreases at the same rate, and vice versa. <br><br>Speed varies inversely with time of travel because the faster we go, the shorter the time travel.</p>
+
+              <p><i>Example 1</i><br>It takes Kevin 20 minutes to ride his bicycle at 20kph from home to the grocery store. To shorten his travel time to 16 minutes for the same distance, how fast should he cycle?</p>
+              <p><i>Solution:</i><br>Let the desired speed be x kph. Then we have the following table.</p>
+              <table border="1" width="100%">
+                <tr>
+                  <td>Speed (kph)</td>
+                  <td>20</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Time (in minutes)</td>
+                  <td>20</td>
+                  <td>16</td>
+                </tr>
+              </table>
+
+              <p>The faster the bicycle is drive, the less time is required to reach the destination.So, this is an inverse proportion.<br><br>Hence</p>
+              <img src="../images/71.jpg" style="max-width: 100%" />
+              <blockquote class="bordered">
+              <p>16 . x = 20 . 20 &nbsp; <b>Get the cross products</b></p>
+              <p>16x/16 = 400/16 &nbsp;&nbsp; <b>Divide both sides by 16</b></p>
+              <br><br>
+              <b>Answer: </b>Kevin should cycle at 25kph
+              </blockquote>
+              <br><br>
+              <h3>Application and Problem Solving</h3>
+              <p>A glass of jar has 64 chocolates. Mark, Dave, and Ralph will share the chocolates in the ratio 1:1:2. How many chocolates will each on of then get?</p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

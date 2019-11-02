@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p, ul,li{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 5 - Solving Real-Life Problems Involving Whole Numbers </h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>There are 4 Bus Liner A and 1 Bus Liner B that were hired at  ₱ 11,445.00 each to take 280 students to the Palarong pambansa  venue. What was the transportation cost per pupil? </p>
+              <h3>EXPLORE</h3>
+              <p>George Polya is a Hungarian mathematician who, in 1945, formulated steps in problem solving namely: understand the  problem, make a plan, carry out the plan, and look back, Now let us solve the problem above using these steps.<br>Step 1 – Understand </p>
+              <ol type="a">
+                <li>What is asked in the problem?<br><b>• The transportation cost per pupil. </b></li>
+                <li>What are given?<br><b>• 4 Bus Liner A and 1 Bus Liner B</b><br><b>•  ₱ 11,445,00 paid for hiring 1 Bus</b><br><b>• There are 280 students </b></li>
+                <li>What are the hidden question?<br><b>• How many buses were used? </b><br><b>• How much was paid for all buses?</b></li>
+              </ol>
+              <p>Step 2 - Make a Plan</p>
+              <ol type="a">
+                <li>What operations will be used? <br><b>• addition, multiplication, and division </b></li>
+                <li>What is the mathematical sentence?<br><b>• (4+1)x 11 445] ÷ 280=N(the transportation per pupil)</b></li>
+              </ol>
+              <p>Step 3 - Carry out the Plan</p>
+              <p>Since the number sentence has more than one operation , we will apply PMDAS rule in order to properly solve for N<br>[(4 + 1) x 11 445] ÷ 280 = N<br>
+              (5 x 11 445) ÷ 280 = N <br>
+              57 225 ÷ 280 = N<br>
+              204.375 = N<br><br>Therefore. each pupil’s transportion cost ₱204.375, which is 
+              approximately <b>₱204.40</b>
+              </p>
+              <p>Step 4 - Look Back</p>
+              <p>Is the answer reasonable? Estimate to check: <br>
+                <b>60 000 ÷ 300 is 200</b><br>
+                <b>204.375 is near 200</b><br>
+               Therefore, the answer is reasonable.
+              <br></p>
+              <br><br>
+              <p>Try to solve the following problem.</p>
+              <p>Arnel, Jacque and Ferdie saved ₱45.000.00 together I the bank. Arnel saved twice as much as Jacque while fredie saved twice as much as the combined savings of Arnel and Jacque. How much did each one save? </p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

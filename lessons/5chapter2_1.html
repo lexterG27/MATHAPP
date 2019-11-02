@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Divisibility Rules</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>In her birthday party, Cheska condacted a game called “The Boat” is sinking She asked her 24 guest kids to grouped themselves into 2,3,4,6 and 8. Each time she asked them to form groups no one is eliminated. But when she asked them group into 5 four kids were eliminated from the game. <br>Why is that so? If she will group the remaining kids them into three, how many of them will be eliminated?</p>
+              <h3>EXPLORE</h3>
+              <p>When 24 kids were asked to group themselves by 2, 3, 4, 6 and 8 no  one was eliminated because 24 divisible by 2,3,4,6 and 8. But when 24 kids asked to group themselves into 5, for kids will eliminated. This is because 24 is not divisible by 5 then, there are 20 kids left. Twenty is not divisible by 3, so two kids will be eliminated. Then there remain 18 kids. If Cheska asks them to group themselves into 3 no one will be eliminated since 18 is divisible by three. </p>
+              <h3>EXPLAIN</h3>
+              <p><b>1. Divisibility rules for 2, 5 and 10</b><br>The divisibility rules for 2, 5 and 10 are grouped together because they all require checking the ones digit of the whole number. Study the given table.
+                  <table border="1" width="100%">
+                <tr>
+                  <td colspan="3">Numbers Divisible By</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>3615</td>
+                  <td>7254</td>
+                  <td>108</td>
+                </tr>
+                <tr>
+                  <td>96</td>
+                  <td>1812</td>
+                  <td>2925</td>
+                </tr>
+                <tr>
+                  <td>342 114</td>
+                  <td>126 222</td>
+                  <td>50 733</td>
+                </tr>
+                
+              </table>
+              <p> How do we know if the number is divisible by 3, 6, and 9?</p>
+
+                <p><b>2. Divisibility rule for 3</b></p>
+                <p>  A number is divisible by 3 if the sum of all the digits is divisible by 3.<br></p>
+                <table>
+                  <tr>
+                    <td><b>Example 7</b></td>
+                    <td>Is 342 divisible by 3?</td>
+                  </tr>
+                  <tr>
+                    <td>Solution:</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3 + 4 + 2 = 9 </td>
+                    <td>(add all the digits)</td>
+                  </tr>
+                  <tr>
+                    <td>9 ÷ 3 = 3  </td>
+                    <td>(divide the sum by 3) </td>
+                  </tr>
+                </table>
+                <br><br>                 
+                <p>Therefore, 342 is divisible by 3 because the sum of all digits which is 9 is divisible by 3. That is 342 divided by 3 is 114. <br><br>Example 8,the number 561 is divisible by 3 because 5 + 6 + 1 = 12, and 12 is divisible by 3 to check 561 divided by 3 is 187</p>
+
+
+                <p><b>2.2 Divisibility rule for 6</b></p>
+                <p>  If number is divisible by both 2 and 3 then its divisible by 6 <br></p>
+                <table>
+                  <tr>
+                    <td><b>Example 9</b></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                  <tr>
+                    <td>Is 126 divisible by 6?</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Solution:</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>126 can be divided by 2 as the ones digit 6, is even</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1 + 2 + 6 = 9  </td>
+                    <td>(add all the digits)</td>
+                  </tr>
+                  <tr>
+                    <td>9 ÷ 3 = 3</td>
+                    <td>(divide the sum by 3)</td>
+                  </tr>
+                </table>
+                <br><br>                 
+                <p>Since 126 is divisible both 2 and 3, then 126 also divisible by 6. Example 10 is 176 divisible by 6. The number is 176 is even indicating that it is Divisible by 2. However, 176 is not divisible by 3 since 1+ 7 + 6 =14 and 14 is not divisible by 3. Therefore 176 is not divisible by 6.</p>
+
+                <p>Identify mentally if the number are divisible by the given number. Write “Yes” if the number is divisible and “No” if the number is not divisible.</p>
+                <ol>
+                  <li>Can 163 be divided by 3? </li>
+                  <li>Can 516 be divided by 3?  </li>
+                  <li>Can 702 be divided by 3? </li>
+                  <li>Can 918 be divided by 3? </li>
+                  <li>Can 534 be divided by 3? </li>
+                  <li>Can 456 be divided by 6? </li>
+                  <li>Can 514 be divided by 6?</li>
+                  <li>Can 684 be divided by 6?</li>
+                  <li>Can 768 be divided by 6?</li>
+                  <li>Can 789 be divided by 6?</li>
+                </ol>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

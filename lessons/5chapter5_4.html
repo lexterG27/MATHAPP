@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Proportion</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Mark was asked by his mother to make 8 ounces of milk for his sister Sheila. He is always happy to help his mom. As he was making the milk, he has read from the can that for every 2 ounces of water, you have to put in 1 scoop of milk. His mother appreciated his help and said "Thank you son,I'm glad I can count on you." How many scoops of milk did Mark put in the feeding tabl?</p>
+              <h3>EXPLORE</h3>
+              <p>If you need 1 scoope of milk for every two ounces water, we need to find out how many schoops of milk is needed for 8 ounces of water.</p>
+              <img src="../images/41.jpg" style="max-width: 100%" />
+              <img src="../images/42.jpg" style="max-width: 100%" />
+              <p>This problem is asking us to find equivalent ratios.<br><b><u>1 scoop</u> = ___<u>?</u>___<br>2 ounces&nbsp;&nbsp;&nbsp;&nbsp;8 ounces</b></p>
+              <p>In this example, the denominator at the left is less than the denominator at the right. This means that 4 is a miltiplier, so we have to multiply the remaining term by 4. Since the remaining term is 1, 1 x 4 = 4. The missing term is 4 such that 1/2 =4/8</p>
+              <p>1/2 and 4/8 are equivalent ratios.<br>Therefore, Mark needs to put in 4 scoops of milk to 8 ounces of water to make a bottle of milk for his sister Sheila.</p>
+              <h3>EXPLAIN</h3>
+              <p>When two ratios are equivalent, they represent a <i>proportion.</i></p>
+              <p>A proportion can be written in two ways, in fraction and colon forms.</p>
+              <p>1/2 = 4/8 or 1:2 = 4:8</p>
+              <p>Both are reas as 'one is to two as four is to eight'.</p>
+              <br>
+              <p><i>Example </i> Write the following as a proportion, in fraction and colon forms:</p>
+              <p>1. two boxes contain 18 cookies, 10 boxes contain 60 cookies</p>
+              <p>2. Mark earned P300.00 for 3 hours of work, while Jusitn earned P400.00 for 4 hours of work.</p>
+              <p>3. John runs 3 miles every 5 days, 6 miles for 10 days</p>
+              <p><i>Solution</i></p>
+              <table border="1" width="100%">
+              <tr>
+                <th>Fraction</th>
+                <th>Colon</th>
+              </tr>
+              <tr>
+                <td>2/18 = 10/60</td>
+                <td>2:18 = 10:60</td>
+              </tr>
+              <tr>
+                <td>300/3 = 400/4</td>
+                <td>300:3 = 400:4</td>
+              </tr>
+              <tr>
+                <td>3/5 = 6/10</td>
+                <td>3:5 = 6:10</td>
+              </tr>
+              </table>
+
+              <p>Identify the means and extremes in the following proportions:</p>
+              <img src="../images/43.jpg" style="max-width: 100%" />
+              <p>Remember that ratios are equivalent if their simplest forms are equal. Can you check if th egiven ratios are equivalent?<br><br>Tell if the given ratios are equivalent or not.</p>
+              <img src="../images/44.jpg" style="max-width: 100%" />
+              <p>As given set of ratios form a proportion if and only if the ratios containing it are equivalent. <br><br>Identify if the given ratios form a proportion or not.</p>
+              <img src="../images/45.jpg" style="max-width: 100%" />
+              <h3>Applications and Problem Solving</h3>
+              <p>Three liters of gasoline can be used to travel at a distance of 48 kilometers. How far can 5 liters go?</p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

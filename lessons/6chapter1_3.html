@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Division of Fractions</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>An 8/10 m piece of wood is cut equally into shorter pieces of 1/5 m each. How many shorter pieces will there be?</p>
+              <img src="../images/56.jpg" style="max-width: 100%" />
+              <p>Based on the model, we can say that 1/5 fits into 8/10 four times.<br>Therefore, we can write the division equation as <br><b>8/10+1/5=4</b><br><br><b>Hence, there are four pieces of 1/5 m of wood</b>.</p>
+              <h3>EXPLAIN</h3>
+              <h3>Reciprocals</h3>
+              <p>If the product of two numbers is 1, then they are reciprocals or multiplicative inverse of each other. To find the reciprocal of a fraction, interchange the numerator and denominator.<br><br>Let us take 2/3. The reciprocal of 2/3 is 3/2. Multiplying the number and its reciprocal, we have 2/3 x 3/2=6/6=1. So, 2/3 and 3/2 are reciprocals or the multiplicative inverse of each other.</p>
+              <h3>Dividing Fractions</h3>
+              <p>To divide fractions, rewrite the division as a related multiplication in which you multiply the dividend by the reciprocal of the divisor.</p>
+              <img src="../images/57.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

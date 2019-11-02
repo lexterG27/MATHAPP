@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Rounding Whole Numbers</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>The Philippines’ tourism industry showed an increasing growth in visitors arrivals from 2012 to 2016. Statistics shows the following increase:</p>
+              <table border="1" width="100%">
+                <tr>
+                  <td colspan="2">International Arrivals<br>March 2012-2016</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>510 270</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>458 163</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>425 858</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>417 392</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>375 083</td>
+                </tr>
+              </table>
+              <p>About how many international arrivals were there last March 2012 and March 2016? </p>
+              <h3>EXPLORE</h3>
+              <p>Rounding numbers is helpful in estimating distances for travel. Time needed in doing tasks, and also in budgeting money.</p>
+              <p>A number line can help us visualize how estimation or rounding works. Its shows which number is closer or farther to a specific number,sometimes, three is no need to know the exact weight, height or number of things. When we know how to round numbers to the nearest place value, we can give an estimate of the numbers we need.</p>
+              <p>Study the line below</p>
+              <img src="../images/3.jpg" style="max-width: 100%" />
+              <p>To which point is 375 083 closer: 300 000 or 400 000? <br>Evidently, 375 083 is closer to 400 000, so we round off 375 083 to 400 000. Let us apply this idea to the given problem.<br>About how many is the international arrival in march 2016? Is 510 270 closer to 400 000 or to 500 000 Clearly 510 270 is much closer. To 500 000 for this reason. The international arrivals is about 500 000.</p>
+              <p>How do we round? <br>We a number by identifying to which simpler number it is closest- either lesser or greater but not exact. Let us discuss how it is done.</p>
+              <h3>ENGAGE</h3>
+              <p>    To round a number means to approximate a number to a particular place value. Numbers maybe rounded to the nearest tens, hundreds, thousands, millions, etc. The place value to which we round off a number is called the rounding place. <br>Study the table below.</p>
+
+              <table border="1" width="100%">
+              <tr>
+                  <th>Rounding Place</th>
+                  <th>Rounding Digit</th>
+                  <th>Digit</th>
+                  <th>Think</th>
+                  <th>Rounded Number</th>
+                </tr>
+                <tr>
+                  <td>Nearest million</td>
+                  <td>28 173 850</td>
+                  <td>28 173 850</td>
+                  <td>1<5</td>
+                  <td>28 000 00</td>
+                </tr>
+                <tr>
+                  <td>Nearest hundred thousand</td>
+                  <td>28 173 850 </td>
+                  <td>28 173 850 </td>
+                  <td>7>5</td>
+                  <td>28 200 000</td>
+                </tr>
+                <tr>
+                  <td>Nearest hundred</td>
+                  <td>28 173 850</td>
+                  <td>28 173 850</td>
+                  <td>5 =5 </td>
+                  <td>28 173 900</td>
+                </tr>
+                
+              </table>
+              <p>To round whole numbers, observe the digit to right of the rounding place. If the digit is greater than or equal to 5. Add 1 to the digit in the rounding place and replace all digits to its right with zeroes. If the digit is less than 5. Retain the digit in the rounding place and replace all digits to its right with zeroes. </p>
+              <p>Consider the number 5827<br>5827 rounded to the nearest tens is <b>5830</b>.<br>5827 rounded to the nearest hundred is <b>5800</b>.<br>5827 rounded to the nearest thousands is <b>6000</b>. 
+              </p>
+
+
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

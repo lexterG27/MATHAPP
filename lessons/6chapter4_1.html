@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Fractions, Decimals, and Percents</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Arvin has 20% fewer marbles than Luigi. When Arvin gave 80 marbles to Luigi, the number of marbles that he has left is half of what Luigi currently has. How many marbles did Arvin have at first?</p>
+              <h3>EXPLORE</h3>
+              <p>Before: </p>
+              <img src="../images/72.jpg" style="max-width: 100%" />
+              <p>You will notice that 20% is equivalent to 1/5 in fraction. Arvin owns 20% fewer marbles than Luigi, which means that if Luigi has 100 marbles then Arvin owns only 80 marbles or 80% or 4/5 of the number that Luigi has.<br><br></p>
+              <p>After:</p>
+              <img src="../images/73.jpg" style="max-width: 100%" />
+
+              <p>The illustration above shows that Arvin gave 80 marbles to Luigi; Arvin’s number of marbles became half that of Luigi’s. Notice that the 2 equal parts represent 80 marbles. So, 80 ÷ 2 = 40. Hence, each part is 40, and 8 x 40 = 320. Therefore, Arvin has 320 marbles at first.
+</p>
+              <h3>EXPLAIN</h3>
+              <h3>Definition of Percent</h3>
+              <p>The word <i>percent</i> comes from the Latin term <i>"per centum"</i> which means per hundred. Percent is the ratio that compares a number to 100. You can write percent as a fraction with a denominator of 100. The symbol % is called the <i> percent sign</i>. In general, the notation <i>n% means “n” per hundred”.</i></p>
+              <p>This definition leads us to different ways of expressing percent.</p>
+              <img src="../images/74.jpg" style="max-width: 100%" />
+              <h3>Writing Fractions as Percents</h3>
+              <p>The figure at the right shows that a whole is divided into 100 equal parts. Each part is 1/100 of the whole or 1 out of 100 parts. We can also say that each part is 1% of the whole. In the figure, 33 parts out of a hundred are shaded. This means 33/100 or 33%.</p>
+              <blockquote class="bordered">
+                <b>To write a fraction as percent:</b><br>Write an equivalent fraction with a denominator of 100. Or think of a number that, when multiplied by the denominator, will result to 100. Multiply the same number by the numerator. Then, write as percent.
+              </blockquote>
+              <br>
+              <p><b>Example 1</b><br>Write each fraction as percent.</p>
+              <img src="../images/75.jpg" style="max-width: 100%" />
+              <br>
+              <p><b>Example 2</b></p>
+              <img src="../images/76.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

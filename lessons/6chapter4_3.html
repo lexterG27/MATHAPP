@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Percent of Change</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>The table below shows the population of the two largest cities in the Philippines.<br><br>By about what percent did the population in each city increase from 2000 to 2010?<br><br>Which city had the greater percent of change in population?</p>
+
+              <table border="1" width="100%">
+                <tr>
+                  <th>City</th>
+                  <th>2000</th>
+                  <th>2010</th>
+                </tr>
+                <tr>
+                  <td>Manila</td>
+                  <td>1 581 082</td>
+                  <td>1 652 171</td>
+                </tr>
+                <tr>
+                  <td>Quezon</td>
+                  <td>2 173 831</td>
+                  <td>2 7161 720</td>
+                </tr>
+              </table>
+
+
+              <h3>EXPLORE</h3>
+              <p>To determine which city had the higher population change, let us find the change in population from the census of year 2000 to the census of 2010 in each city. Manila’s population increased by 71 089, while Quezon City’s population has increased by 687 889.</p>
+              <br><p>Now, to determine which city had the greater percent of change in its population, find the increase in population of each city in percent for us to compare them.</p>
+              <blockquote class="bordered">
+                Manila: 71 089 ÷ 1 581 082  ͌  0.045 (rounded to the nearest thousandths)<br>0.045 x 100% = 4.5%<br>Manila’s percent of increase is about 4.5%.
+              </blockquote>
+
+              <blockquote class="bordered">
+                Quezon City: 587 889 ÷ 2 173 831 ͌ 0.2704<br>0.2704 x 100% = 27.04%<br>Quezon City’s percent of increase is about 27.04%
+              </blockquote>
+
+              <p>Based on its percent of change, Quezon City had bigger percent of change in population compared to Manila.</p>
+
+
+              <h3>EXPLAIN</h3>
+
+              <p>A <i>percent of change</i> indicates how much a quantity increases or decreases with respect to the original amount. Whenever there is a change (increase or decrease), it can be expressed as a percent of increase or of decrease. If the new amount or value is greater than the original amount or value, the percent of change is called percent of increase. If the new amount or value is less than the original amount or value, the percent of change is called percent of decrease.</p>
+
+              <p>To find the percent of change, use the following formula.</p>
+
+              <blockquote class="bordered">
+                <b>Percent of change </b>=  (Amount of increase or decrease)/(Original amount)
+              </blockquote>
+
+              <h3>Finding Percent of Increase</h3>
+              <p>To find the percent of increase, consider the following examples.</p>
+              <p><i>Example 1 </i> <br>Find the percent of increase from 8 to 14.</p>
+
+              <img src="../images/82.jpg" style="max-width: 100%" />
+              <br><h3>Application and Problem Solving</h3>
+              <p>The number of members of Sipnayan Society from the last two school years is listed on the table below.</p>
+
+              <table border="1" width="100%">
+                <tr>
+                  <th>School Year</th>
+                  <th>Number of Members</th>
+                </tr>
+                <tr>
+                  <td>2011-2012</td>
+                  <td>243</td>
+                </tr>
+                 <tr>
+                  <td>2012-2013</td>
+                  <td>652</td>
+                </tr>
+              </table>
+
+              <p>What is the percent of increase in membership of Sipnayan Society?</p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

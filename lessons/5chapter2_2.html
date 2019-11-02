@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Greatest Common Factor</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p> Justin has 3 boxes of toy cars. The first box contains 12 toy cars. The second box has 16 toy cars. And the third box has 20 toy  cars. He divided each box of toys equally among his younger cousins. What is the biggest possible number of toy cars that each of his cousins will receive. How many of his cousins will receive this number of toys?</p>
+              <h3>EXPLORE</h3>
+              <p> To answer the problem, find the greatest common factor (GCF) of  12 ,16, and 20 we can find this by using continuous Division Method or also known as Ladder Method.</p>
+              <h3>Continuous Division</h3>
+              <p><b>Step 1:</b> Write the given numbers 12, 16, and 20, in a horizontal line and determine a common prime factor that will divide all numbers. </p>
+              <p><b>Step 2:</b> Write each common prime to the left side of 12, 16, and 20  and write the quotient below the numbers. Repeat the process until there is no common prime factor (divisor). </p>
+              <img src="../images/5.jpg" style="max-width: 100%" />
+              <p><b>Step 3:</b> Multiply all common prime factors (divisors). In our Example we, have 2 x 2 = 4. The GCF is 4.</p>
+
+              <br><br>
+              <p>Therefore, each cousin will receive at most 4 toys.<br>To know how many of them will receive this number of toys, we find the total number of toy cars and then divide the sum by the GCF.<br><br> 12 + 16 + 20 = 48 toy cars. <br>48 ÷ 4 = 12<br><br>Thus, of Justine’s cousins will receive 4 toy cars each.</p>
+              <h3>EXPLAIN</h3>
+              <p>Common factors are factors that are the same for two or more numbers. Common factor is the greatest number contained exactly in 2 or more numbers. Factors is also divisor, so it follows that the greatest common factor is also the greatest common divisor of the given numbers. Some numbers, like 25 and 18, have no common factors other than 1. The numbers are said to be relatively prime. </p>
+              <p>Once way of solving for the GCF of a set of the given numbers is through Continuous Division Method. As its name implies, it is done with repeated division until all given numbers are not anymore divisible one common divisor other than 1. The following steps are considered in this method.</p>
+              <p><b>Step 1: </b>Write the given numbers horizontally and determine a common prime factor that will divide all the numbers.</p>
+              <p><b>Step 2:</b> Write each common prime factor at the left side of the horizontal line and write the quotients below the numbers. Repeat the process until there is no common divisor.</p>
+              <p><b>Step 3:</b>Multiply all the prime divisors, which is the GCF.</p>
+              <br>
+              <p><b>Example</b> What is the GCF of 18 and 27</p>
+              <img src="../images/6.jpg" style="max-width: 100%" />
+              <p><b>Answer: The GCF of 18 and 27 is 9. </b></p>
+              <br><br>
+              <h3>Application and Problem Solving</h3>
+              <p>Mr. Perez bough paper plates, table napkins, and cups as his contribution every Christmas party he will go to. Plates come packages of 60, table napkins in 80 and cups in 120. He wants to bring the same number of plates, table napkins, and cups. What is the largest possible number of each that he can bring? </p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

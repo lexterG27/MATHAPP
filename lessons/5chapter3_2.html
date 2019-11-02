@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Subtracting Fractions and Mixed Numbers</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Lisa is arranging pictures in 2 photo albums. She has filled 1 2/3 of the albums with colored and black and white photos of a picnic at the lake. One-fourth of the filled pages has black and white photos. What part of the filled pages have colored photos?</p>
+              <h3>EXPLORE</h3>
+              <p>Subtract 1/4 from 1 2/3.</p>
+              <p><b>Step 1.</b> Align the fractions and compare the denominators.</p>
+              <p><b>Step 2.</b> Find the LCM of the two different denominators. This will be the LCD.</p>
+              <p><b>Step 3.</b> Write equivalent fractions.</p>
+              <p><b>Step 4.</b> Subract the numerators. Write the difference over the common denominator..</p><br>
+              <p><i>Answer</i> 1 5/12 of the albums is filled with colored photos.</p>
+              <h3>EXPLAIN</h3>
+              <p>In the previous lesson, your were taught how to add fractions and mixed numbers. In adding fractions with mixed numbers, you have to convert the dissimilar fractions to similar fractions before performing addition. </p>
+              <p>The same applies for subtraction. All you have to do is to make the fractions similar before doing the operation.<br>Let us take a look at the given examples.<br>A/ Subtraction of dissimilar fractions without regrouping. </p>
+              <p><i>Example 1</i>Find the difference of 5/2 and 1/6. <br><i>Solution:</i><br>Find the LCD of 2 and 6 using continuous division</p>
+              <p>Given the LCD, rename the fractions as equivalent similar fractions.</p>
+              <p>Subtract the numerators (15-1=14) and copy the denominator. Reduce to lowest terms. Find the GCF.</p>
+              <p>Rename the improper fraction as a mixed number.</p>
+              <p>The final answer is 2 1/3.</p>
+              <br>
+              <p>B. Subtration of mixed numbers with regrouping</p>
+              <p><i>Example 2</i>Find the difference of 5 1/3 and 1 4/5.</p>
+              <p><i>Solution</i><br>Using the LCD, rename the dissimilar fractions to similar fractions.</p>
+              <p>Since 5/15 is less than 12/15, we need to regroup 1 whole or 15/15 from 5. Therefore, 5 becomes 4 15/15.</p>
+              <p>Let us add 5/15/ to 4 15/15.</p>
+              <p>We can now subtract the mixed numbers.</p>
+              <p>The final answer is 3 8/15.</p>
+        </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

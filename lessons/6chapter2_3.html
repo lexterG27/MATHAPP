@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Division of Decimals</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Shiela would like to pour 3.5 liters of cooking oil equally into 5 bottles. How much cooking oil will there be in each bottle?</p>
+              <h3>EXPLORE</h3>
+              <p>To solve the problem, divide 3.5 by 5,
+        <br>Number sentence: 3.5 + 5 = ______
+        <br><br><i>Solution:</i>
+        Dividing a decimal by a whole number is like dividing whole numbers. The
+        important thing to do is identify the position of the decimal point in your
+        dividend.</p>
+        <img src="../images/63.jpg" style="max-width: 100%" /><br><br>
+        <img src="../images/64.jpg" style="max-width: 100%" />
+
+        <p>Separate the blocks into five froups. There are five groups of 0.7 . So, 3.5 /5 = 0/7 . <br><i><b>Answer: </b></i> Each bottle will contain 0.7 liters of cooking oil.</p>
+              <h3>EXPLAIN</h3>
+              <h3>Dividing Decimals by Whole Numbers</h3>
+              <p>We use the following method when we divide a decimal quantity by a whole number.</p>
+
+              <blockquote class="bordered">
+                <b>To divide a decimal by a whole number. </b><br>1.  Place the decimal point in the quotient directly above the decimal point in the dividend. <br>2.  Divide as in whole numbers.<br>3.  Insert zeros to the dividend when needed.</blockquote>
+
+              <h3>Dividing Decimals by Decimals</h3>
+              <blockquote class="bordered">
+                <b>To divide a decimal by another decimal:</b><br>1.  Change the divisor to a whole number by moving the decimal point to the rightmost place.<br>2.  Move the decimal point in the dividend to as many places as the decimal point in the divisor is moved. <br>3.  Divide like whole numbers.
+              </blockquote>
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

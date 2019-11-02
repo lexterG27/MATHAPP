@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Order of Operation on Whole Numbers</h2>
+            </div>
+
+            <div class="content">
+              <h3>Engage</h3>
+              <p>A teacher wrote the expression (4 + 2 x 5) ÷7 + 3 on the board and called two pupils solve it. <br> Below are the solutions of two pupils.</p>
+              <img src="../images/4.jpg" style="max-width: 100%" />
+              <p>Whose solution do you think is correct?</p>
+              <h3>EXPLORE</h3>
+              <p>The expression can be solved by following the rules on order of operations, this is called the PMDAS rule which stands for parentheses, multiplication, division, addition, and subtraction.</p>
+              <p>In any numerical expression that has more than one operation perform the operation inside the parentheses first. Then perform multiplication and division working from left to right Lastly. Perform addition and subtraction working from left to right.</p>
+              <p>Hence, according to the rule. Pupil 2’s solution correct (4 + 2 x 5) ÷ 7 + 3  <br>Solve the operations inside the parenthesis<br>
+                     = (4 + 10) ÷ 7 + 3   Multiply 2 and 5 first<br>
+                     = 14 ÷ 7 + 3      Add 4 and 10<br>
+                     = 2 + 3       Divide 14 by 7<br>
+                     = 5        Add 2 and 3 </p>
+              <h3>EXPLAIN</h3>
+              <table border="1" width="100%">
+                <tr>
+                  <td>400 ÷ 2 x 5 – 120 + 5 </td>
+                  <td>Divide 400 by 2.
+</td>
+                </tr>
+                <tr>
+                  <td>= 200 x 5 – 120 + 5</td>
+                  <td>Multiply 200 by 5.</td>
+                </tr>
+                <tr>
+                  <td>= 1000 – 120 + 5 </td>
+                  <td>Subtract 120 from 1000.
+</td>
+                </tr>
+                <tr>
+                  <td>= 880 + 5 </td>
+                  <td>Then, add.
+</td>
+                </tr>
+                <tr>
+                  <td>= 885 </td>
+                  <td></td>
+                </tr>
+              </table>
+              <p>Note: we work from left to right when there are only addition and subtraction. We also work from left to right when there are only multiplication and division.</p>
+              <h3>Application and Problem Solving</h3>
+              <p>Mang Delfin bought 60 crates of chicos. Each crate contain 150 chicos.  He repacked them into bags of 6 chicos each. How many bags of chicos did he make? </p>
+
+            </div>
+
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

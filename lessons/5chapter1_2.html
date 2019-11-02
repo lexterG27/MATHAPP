@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Reading and Writing Whole Numbers</h2>
+            </div>
+
+            <div class="content">
+              <p>Based on the 2010 Census of population and housing the population of the Philippines in 2010 was 92 337 952. How do you read this number?</p>
+              <h3>EXPLORE</h3>
+              <p>Large number can be read and written using the place value chart. Let us consider the population of the Philippines.</p>
+              <p>The number can be written as 92 337 853. <br>How do you read this number? <br> What is the importance of knowing how to read numbers?</p>
+              <h3>EXPLAIN</h3>
+              <p>Read and write whole numbers by period starting from the left. Leave a space between periods when writing millions in standard form.<br>Use a comma between periods (ten thousands and up) when writing numbers in words. If all the three digits in a period is zeros, do not write nor read period name.</p>
+              <br>
+              <p>Consider the following examples:</p>
+              <p>Write the following in standard form.</p>
+              <p>1. Six million, two hunderd forty-five thousand, three hundred<br><b>Answer: 6 245 300</b></p>
+              <p>Six million, six hundred, twenty three<br><b>Answer: 6 000 623</b></p>
+              <p>Ten million, seven hundred sixty-five thousand, eighty three<br><b>Answer: 10 764 083</b></p>
+              <br>
+              <p>Write the following in words.</p>
+              <p><b>5 076 554<br>Answer: five million, seventy-six thousand, five hundred fifty four</b></p>
+
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

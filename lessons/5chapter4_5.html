@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 5 - Adding and Subtracting Decimals through Thousandths</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>The milkman rode 0.22 kilomerters to make his first delivery of milk and 0.04 kilometers to make the second delivery. How far did he travel in delivering milk?</p>
+              <h3>EXPLORE</h3>
+              <p>We can also show the sum of 0.22 and 0.04 using pictorial models.</p>
+              <img src="../images/38.jpg" style="max-width: 100%" />
+              <img src="../images/39.jpg" style="max-width: 100%" />
+              <img src="../images/40.jpg" style="max-width: 100%" />
+              <p><i>Answer</i> The milkman rode 0.26 kilometers in all.<br>Without illustrations, we can solve the problem above by following these steps.<br>1. Write decimals in column form. Align the decimal points.<br><b>&nbsp;&nbsp;&nbsp;0.22<br>+ 0.04<br>----------</b></p>
+              <p>2. Add as in whole numbers. Add the digits belonging to the same decimal place.<br><b>&nbsp;&nbsp;&nbsp;0.22<br>+ 0.04<br>----------<br>&nbsp;&nbsp;&nbsp;0.26</b></p>
+              <p>3. Write the decimal point in the sum.<br><b>&nbsp;&nbsp;&nbsp;0.22<br>+ 0.04<br>----------<br>&nbsp;&nbsp;&nbsp;0.26<br><br><i>Answer</i>:</b> The milkman rode 0.26 km in all.</p>
+              <h3>EXPLAIN</h3>
+              <h3>Addition and Subtraction of Decimals</h3>
+              <p>To add decimals, align the decimal points in a straight column. Add as in whole numbers. Align the decimal point in the sum with the decimal points in the addends. Of the sum of the digits is 10 or more, regroup the decimal. Use the decimal point to separate the whole number from the decimal number in the sum. When subtracting decimals, align first the decimal point, just as addition. Regroup the decimals if necessary.</p>
+              <h3>Addition of Decimals without Regrouping</h3>
+              <p>Find the sum of 0.235 and 0.4<br><i>Solution</i><br>Write the decimals in column form.<br>&nbsp;&nbsp;&nbsp;0.235<br>+ 0.4<br>-----------</p></p>
+              <p>Put the zeros to the right of the decimal (if necessary) to have the same length<br>&nbsp;&nbsp;&nbsp;0.235<br>+ 0.400<br>-----------<br>Add like adding whole numbers, then affix the decimal point in the sum.<br>&nbsp;&nbsp;&nbsp;0.235<br>+ 0.400<br>-----------<br><b>0.635</b></p>
+              <h3>Subtraction of Decimals without Regrouping</h3>
+              <p>Subtract 0.15 from 0.832<br><i>Solution:</i><br> Write the decimals in column form.<br>&nbsp;&nbsp;0.832<br> -  0.15<br>-----------</p>
+              <p>Put extra zeros to the right of the decimal (if necessary) to have the same length.<br>&nbsp;&nbsp;0.832<br> -  0.150<br>-----------<br>Subtract like subtracting whole numbers, then affix the decimal point in the sum.<br>&nbsp;&nbsp;0.832<br> -  0.150<br>-----------<br><b>&nbsp;&nbsp;0.682</b><br><br><i>Answer</i> The difference is 0.682.</p>
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

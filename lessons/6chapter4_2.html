@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Percentage, Rate, and Base</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Mark’s daily allowance is ₱40.00. He spends ₱12.00 for snacks. This is 30% of his daily allowance.<br>Identify which information represents the percentage, the rate, and the base.</p>
+              <h3>EXPLORE</h3>
+              <p>In the situation given above, we can say that:
+          30% of ₱40.00 is ₱12.00. In this case, we can now easily identify which is the percentage, the rate, or the base. We let P be the percentage, R be the rate, and B be the base.</p>
+              <img src="../images/77.jpg" style="max-width: 100%" />
+              <h3></h3>
+              <p></p>
+              <img src="../images/77.jpg" style="max-width: 100%" />
+              <h3>EXPLAIN</h3>
+              <p>The situation above can also be described as:</p>
+              <img src="../images/78.jpg" style="max-width: 100%" />
+              <br>
+              <p>Based on this, we can now generate formula for finding the percentage (P), the rate, (R), and the base (B).</p>
+
+              <img src="../images/79.jpg" style="max-width: 100%" />
+              <p>P = Percentage; R = Rate; B=Base</p>
+
+              <p>The Techan’s triangle above can help you remember the three formulas. To find the percentage (P) cover P; since R and B are next to each other, it means multiplication. To find the base (B), cover the B; since P is over R, it means division. And to find rate (R), cover R; since P is over B, it means division. <br><br>Let us study the following examples.</p>
+
+              <p>Finding the percentage (P) <br><br><b>Example 1</b> Find 75% of 80. <br><i>Solution:</i><br>We can solve the problem in two ways.</p>
+
+              <img src="../images/80.jpg" style="max-width: 100%" /><br><br>
+              <img src="../images/81.jpg" style="max-width: 100%" />
+
+              <br><br>
+              <p><b>Answer: 75% of 80 is 60.</b></p>
+
+              <h3>Application and Problem Solving</h3>
+              <p>There are 360 pupils in a school. If 15% of them are Boy Scouts, how many Boy Scouts does the school have?</p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

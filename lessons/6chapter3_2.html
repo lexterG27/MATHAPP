@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - The Concept of Proportion</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Mrs. Reyes bought 9 different kinds of pastries for ₱324.00. At the same price, how much will she pay for 15 different kinds of pastries?</p>
+              <h3>EXPLORE</h3>
+              <p>To solve this problem, write equal ratios.Let n be the price of 15 different kinds of pastries<br><br><b>9/324=15/n</b></p>
+              <p>To solve the problem of Mrs. Reyes:</p>
+              <img src="../images/66.jpg" style="max-width: 100%" />
+              <p>Therefore, she has to pay ₱540.00 for 15 different kinds of pastries</p>
+              <h3>EXPLAIN</h3>
+              <p>When two ratios are equal, a proportion is formed. A proportion is a statement of equality between two ratios. Each part of a proportion is a term. The first and the last terms are called extremes while the second and the third terms are called means.</p>
+              <p>In proportion 9/324=  15/n or 9:324 = 15:n, 9 and n are the extremes, while 324 and 15 are the means.</p>
+              <p>In proportion, the cross products of equal ratios are equal.<br>If a/b=c/d, then ad = bc<br>Thus, the product of the means is equal to the product of extremes.</p>
+              <img src="../images/67.jpg" style="max-width: 100%" /><br><br><br>
+              <img src="../images/68.jpg" style="max-width: 100%" />
+              <br><br><br>
+              <img src="../images/69.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

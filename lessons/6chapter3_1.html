@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - The Concept of Ratio</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>In Mrs. Dela Rosa’s Grade 6 Math class, there are 22 girls and 19 boys. Compare the number of girls to the number of boys and vice versa.</p>
+              <h3>EXPLORE</h3>
+              <p>To compare, let us use the concepts of ratio. Ratio is a comparison of two quantities. If there are 22 girls and 19 boys, we can say that 22 is to 19. Other ways to express such comparison is by writing them using a colon, 22:19 or writing them in fraction form, 22/19, Therefore, comparing the number of boys to the number girls can be expressed as: <br><b>19 is to 22, 19:22, or 19/22</b></p>
+              <h3>EXPLAIN</h3>
+              <p><b>Ratio</b> is the spoken language of arithmetic. It is a way of comparting two or more quantities having the same units – the quantities may be separate entities or they may be different parts of a whole.</p>
+              <blockquote class="bordered">
+              We can write the ratio of a and b in three ways: <br><b>word form </b> a is to b <br> <b>colon form</b>  a:b <br> <b>  fraction form  </b>  a/b
+              </blockquote>
+
+              <p>Ratio must be expressed in simplest form, which means that the terms are relatively prime to each other.<br><br> If there are 15 boys and 12 girls in a class, then, the ratio of the boys to the girls is 15 is to 12 and the ratio of the girls to the boys is 12 is to 15. In the ratio 15 is to 12, the first term is 15 and the second term is 12. It may also be written as 15:12 or 15/12. Even if the ratio is in fractional form, we say fifteen is to twelve. Since the ratio is not yet in its simplest form, we can express it as: </p>
+
+              <p><b>15/12  =  3 x 5 / 3 x 4  =  5/4</b></p>
+              <br>
+              <p>The order in which the ratio is expressed is important. Therefore, the order of the terms in a ratio must correspond to the order of objects being compared.<br>In a ratio, a part can be compared to its whole.<br>In the preceding example, the ratio of the number of boys to the total numbers of students is 15 is to 27 and the ratio of the number of girls to the total number of students is 12 is to 27. <br>If we compare the part to the total, the ratio of the part to the total has the same meaning as a fraction.</p>
+
+              <br>
+              <p><i>Example 1</i> <br>Compare the number of vowels to consonants and vice versa in the word MATHEMATICS, in word, colon, and fraction forms.</p>
+              <img src="../images/65.jpg" style="max-width: 100%" />
+              <br>
+              <p><i>Example 2</i><br>Express the ratio of two 25-centavo coins to ₱2.50 coins in colon form.<br><br><i>Simplify.</i><br>We need to make sure that the two quantities have the same units. ₱2.50 may consist of ten 25-centavo coins. Thus, we can express the ratio of the two quantities as 2:10. In simplest form, the ratio of two 25-centavo coins to ₱2.50 coins is 1:5.<br><br>Remember: The ratio of two quantities has NO unit of measure.</p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

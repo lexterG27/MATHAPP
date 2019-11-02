@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Least Common Multiple</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p> Judy Ann cuts out rectangular pieces of paper and lays the out  as shown in drawing. Each rectangular pieces of black paper is 6 cm long, while the white paper 8 cm long. What is the shortest length at which the pieces of paper will line up across both rows? </p>
+              <h3>EXPLORE</h3>
+              <p>We can solve the problem by finding the least common multiple of the numbers using continuous division. We have learned this method from the previous lesson and we will apply the same steps in solving for the LCM. However,  instead of multiplying all the common divisors alone, we will include the quotient to the last step. We have </p>
+              <img src="../images/7.jpg" style="max-width: 100%" />
+              <p>Since there is no more common divisor 3 and 4 we have 2 as  the only common divisor. To solve for the LCM, we multiply the common divisor 2 by the quotient 3 and 4. Thus we have 2 x 3 x 4 = 24. Therefore, the shortest length at which the pieces of paper will the line up across two rows is 24 cm. </p>
+              <h3>EXPLAIN</h3>
+              <p>A multiple of a number is the product of the number and any counting number. And just the like common factor, two or more numbers have also common multiples. The LCM then is the least common multiple of two or more numbers. For example, the LCM of relatively prime numbers are their product.</p>
+              <p>To find the LCM of the given numbers, we can use the method, and continuous division. Of the two method mentioned continuous division is  more efficient: and helpful if three or more numbers are involved. Let us study the following examples. </p>
+              <p><b>Find the LCM of 10, 15, and 8</b><br>Solution:<br>By listing multiples<br>a.) Multiples of 10, 10, 20, 30, 40, 50, 50, 70, 80, 90, 100, 110, 120<br>b.) Multiples of 15: 15, 30, 45, 60, 75, 90, 205, 120<br>c.) Multiples of  8: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120<br><br><img src="../images/8.jpg" style="max-width: 100%" /><br><b>The LCM of 10, 15, and 8 is 20.</b></p>
+              <br><br>
+              <p><b>Example 2 </b>What is the LCM of 24, 20, 28, and 32?</p>
+              <img src="../images/9.jpg" style="max-width: 100%" />
+              <p>2 x 2 x 2 x 3 x 5 x 7 x 4 = 3360<br><b>Answer: The LCM of 24, 20, 28, and 32 is 3360</b></p>
+              <br><br>
+              <h3>Application and Problem Solving</h3>
+              <p>Plane A flies to Davao every 4 days. Plane B flies to Davao every 8 days. If both planes are in Davao on July 17, what is the earliest date that both planes will be in Davao again? </p>
+
+      
+
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
