@@ -1,0 +1,50 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+  border-right: 1px dotted grey;
+  clear: both; /* clear space around (left and right side), this pushes other elements downward */   
+}
+
+
+div.content {
+
+  clear: both;
+}
+
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+  margin-top: 0;
+}
+
+nav ul li {
+
+  color: white;
+  text-align: center;
+}
+
+
+
+
+nav li.current {
+  text-align:center;
+}
+
+nav li.current a {
+  font-weight: bold;
+}
+
+
+
+/* rules for larger screens (mobile first!): */
+@media only screen and (min-width: 801px) {
+    /* rules that only apply for screens larger than 800px */
+
+    div.content {
+      max-width: 100%;
+      clear: none;
+    }
+    div.content div {
+      padding: 0 20px;
+    }
+} /* /@media */
