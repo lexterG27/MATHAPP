@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/movingbackground.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.bigger{
+  font-size: 19px;
+}
+</style>
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h1>Math Learning|SJES</h1>
+    </div>
+    <div class="hero-bkg-animated">
+      <div data-role="content" role="main">
+
+
+      <img src="images/headerfinal.png"  />
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider" data-theme="d">Dividing a Decimal by a Decimal</li>
+        <li><video style="max-width: 100%; height:auto;" controls>
+            <source src="videos/dividingdecimals.mp4" type="video/mp4">
+          </video></li>
+          <br>
+          <li data-role="list-divider" data-theme="b">Identifying Place Value</li>
+        <li><video style="max-width: 100%; height:auto;" controls>
+            <source src="videos/identifyingplacevalue.mp4" type="video/mp4">
+          </video></li>
+        
+      </ul>
+
+
+            <div>
+              <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+            </div>
+        </div>
+
+
+          
+      </div>
+
+
+  </div>
+  </div>
+
+
+
+
+<!--External Contents-->
+<audio id="clicked">
+          <source src="sounds/click.wav" type="audio/ogg">
+</audio>
+
+<!--External Scripts when button clicked-->
+<script>
+$(function(){
+    function playOnClick(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = 'choosegrade.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv1').click(function(){
+       playOnClick();
+   });
+});
+
+</script> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

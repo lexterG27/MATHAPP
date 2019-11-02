@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/indexpage.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body class="welcome">
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+
+
+    <div data-role="content" role="main">
+            <span id="splash-overlay" class="splash"></span>
+            <span id="welcome" class="z-depth-4"></span>
+           
+            <header class="navbar-fixed"> 
+              <nav class="row deep-purple darken-3">
+              </nav>
+            </header>
+
+            <main class="valign-wrapper">
+            <span class="container grey-text text-lighten-1 ">
+
+              <div data-role="content" role="main">
+                  <img src="images/logo.png" />
+                  <h3><center>Basic to Advance Math Learning App for Grade 4 to 6 of Sanijubar Elementary School, Agoo, La Union</center></h3>
+                  <img src="images/loading.gif" />
+              </div>
+
+              <footer class="row deep-purple darken-3">
+              <div class="footer-copyright deep-purple darken-4">
+              </div>
+            </footer>
+    </div>
+  </div>
+
+<!--External Audio Background Music-->
+<div id="player">
+  <embed name="myMusic" loop="infinite" hidden="true" src="sounds\fun.mp3"></embed>
+</div>
+
+
+
+  <!--Script to move to the next page-->
+<script>
+    setTimeout(function(){
+       window.location.href = 'mainmenu.html';
+    }, 14000);
+</script>
+
+</body>
+</html>
+

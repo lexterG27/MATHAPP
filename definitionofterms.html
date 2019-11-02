@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/movingbackground.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h1>Math Learning|SJES</h1>
+    </div>
+    <div class="hero-bkg-animated">
+      <div data-role="content" role="main">
+            <img src="images/headerfinal.png"/>
+
+            <div data-content-theme="b">
+             <div data-role="collapsible" data-expanded-icon="flat-calendar" data-collapsed="false" data-theme="a">
+            <button class="collapsible" data-theme="b">Acute Angle</button>
+            <div class="content">
+            <p>An Angle with measure between zero degress and 90 degrees</p>
+              <img src="defterms/acuteangle.jpg" style="max-width: 100%">
+            </div>
+
+            <button class="collapsible" data-theme="b">Acute Triangle</button>
+            <div class="content">
+            <p>Triangle with all interior angles measuring less than 90 degrees.</p>
+          <img src="defterms/acutetriangle.jpg" style="max-width: 100%">
+            </div>
+
+            <button class="collapsible" data-theme="b">Addend</button>
+            <div class="content">
+              <p>A number used in the mathematical operation of addition (e.g. 6+8 =14, 6, and 8 are addends)</p>
+            </div>
+
+             <button class="collapsible" data-theme="d">Additive Inverse</button>
+            <div class="content">
+              <p>A number is what you add to a number to create the sum of zero.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Adjacent Angle</button>
+            <div class="content">
+              <p>are named by their endpoints</p>
+            </div>
+
+
+            <button class="collapsible" data-theme="d">Acute Triangle</button>
+            <div class="content">
+            
+            </div>
+
+            <button class="collapsible" data-theme="e">Area</button>
+            <div class="content">
+              <p>A flat, or plane figure is the number of unit squares that can be contained within it. The unit square is usually some standard unit, like a square meter, a square foot, or a square inch.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Bar Graph</button>
+            <div class="content">
+              <p>A representation of the length of either vertical or horizontal bars used to enumerate and compare data.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Benchmark</button>
+            <div class="content">
+              <p>A commonly known point of reference from which measurements may be made. (ex. four quarters make a whole).</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Benchmark Fraction</button>
+            <div class="content">
+              <p>A commonly known fraction that serves as a meaningful reference point for measurement comparison.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Bundling/Unbundling</button>
+            <div class="content">
+              <p>Putting smaller units together (or apart) to make a larger (smaller) one.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Common Denominator</button>
+            <div class="content">
+              <p>A number divisible by all of the denominators in a set of fractions.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Common Factor</button>
+            <div class="content">
+              <p>A whole number that divies without remainder into two or more non-zero numbers.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Common Multiple</button>
+            <div class="content">
+              <p>A whole-number multiple of two or more given numbers.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Complementary Angles</button>
+            <div class="content">
+              <p>Any two angles whose measures have a sum of 90 degrees.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Cube Root</button>
+            <div class="content">
+              <p>is the number that multiplies by itself three times in order to create a cubic value.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Decimal Fraction</button>
+            <div class="content">
+              <p>A proper fraction whose denominator is a power of 10.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Equilateral Triangle</button>
+            <div class="content">
+              <p>A triangle with three equal sides.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Exponential Form</button>
+            <div class="content">
+              <p>A mathematical representation of a term raised to a power.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Factor</button>
+            <div class="content">
+             <p>The value that can be divided into another value with no remainder.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Fluency</button>
+            <div class="content">
+             <p>The efficient automatic recall of addition, subtraction, multiplication and division facts.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Geometric Solid</button>
+            <div class="content">
+             <p>A three-dimensional shape bounded by surfaces.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Halfway</button>
+            <div class="content">
+             <p>with reference to a number line, the midpoint between two numbers.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Hash Mark</button>
+            <div class="content">
+             <p>The marks on a ruler or other measurement tool.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Hexagon</button>
+            <div class="content">
+             <p>A polygon with siz sides.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Improper Fraction</button>
+            <div class="content">
+             <p>A fraction in which the numerator is greater than the denominator.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Inequality</button>
+            <div class="content">
+             <p>A statement relating two or more quantities or values that are not equal using words or symbols.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Interval</button>
+            <div class="content">
+             <p>A set of numbers or values betwee and, in some cases, including two given values.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Isosceles Triangle</button>
+            <div class="content">
+             <p>A triangle that has two or more congruent sides.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Line Graph</button>
+            <div class="content">
+             <p>A representation used to show change over an interval, with the data points connected by line segments.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Linear Expression</button>
+            <div class="content">
+             <p>A collection of numbers, symbols, operations, and two or fewer variables with a degree of one.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Mean</button>
+            <div class="content">
+             <p>A measure of center where the sum of a set of numbers is divided by the number of elements in the set.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Median</button>
+            <div class="content">
+             <p>A measure of center that identifies a value such that half the data is above the value and half the data is below the value when the data is listed in order.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Metric System</button>
+            <div class="content">
+             <p>A measurement system based on the base-ten numeration system.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Mixed Number</button>
+            <div class="content">
+             <p>A number represented by a whole number next to a fraction, and is equal to the sumof the whole number and the fraction.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Mode</button>
+            <div class="content">
+             <p>A measure of center that is the value or values that occur(s) frequently in a given set of numbers.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Multiple of a Number</button>
+            <div class="content">
+             <p>A number into which a given number may be divided with no remainder.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Multiplier</button>
+            <div class="content">
+             <p>The factor representing the number of units.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Numerator</button>
+            <div class="content">
+             <p>The number of equal parts of a total number of parts in a fraction.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Numerical Expression</button>
+            <div class="content">
+             <p>An angle whose measure is greater than 90 degrees and less than 180 degrees.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Obtuse Angle</button>
+            <div class="content">
+             <p>An angle whose measure is greater thatn 90 degrees and less than 180 degrees.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Obtuse Triangle</button>
+            <div class="content">
+             <p>A triangle with an interior obtuse angle</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Ordered Pair</button>
+            <div class="content">
+             <p>A pair of numbers used to locate and describe points in the coordinate plane in the form (x,y)</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Ordinal Number</button>
+            <div class="content">
+             <p>A whole number that names the position of an object in a set.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Parallel Lines</button>
+            <div class="content">
+             <p>Lines in the same plane that never intersect and are always equidistant.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Perpendicular Lines</button>
+            <div class="content">
+             <p>Two lines that intersect to form right angles.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Place Value</button>
+            <div class="content">
+             <p>The value of a numerical based on the position of each digit in the number.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Prime Factor</button>
+            <div class="content">
+             <p>All the factors on a quantity that are only divisible by the number one and itself. </p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Prime Number</button>
+            <div class="content">
+             <p>A number that has exactly two different factors, one and itself.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Probability</button>
+            <div class="content">
+             <p>The measure of the likelihood of the occurence of an event.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Quadrilateral</button>
+            <div class="content">
+             <p>A polygon with four sides.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Reflex Angle</button>
+            <div class="content">
+             <p>An angle that is greater than 180 and less than 360.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Right Angle</button>
+            <div class="content">
+             <p>An angle whose measure is 90 degrees.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Right Triangle</button>
+            <div class="content">
+             <p>A triangle that contains a right angle.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Scalene Triangle</button>
+            <div class="content">
+             <p>A triangle with no congruent sides.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Scientific Notation</button>
+            <div class="content">
+            <p>A representation of a very large or very small number expressed as the product of a power of 10, abd a decimal number greater than or equal to one and less than 10.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Simplest Form</button>
+            <div class="content">
+            <p>Fractional: a fraction that has no common factor for the numerator and denominator; Polynomial: ana expression that has no common factors for all terms and no like terms; Radical: there are no perfect square factors contained in the radicand and there are no like terms.</p>
+            </div>
+
+            <button class="collapsible" data-theme="e">Standard Notation</button>
+            <div class="content">
+            <p>A number written with one digit for each place value in a base ten numeric system.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Supplementary Angles</button>
+            <div class="content">
+            <p>Two angles whose measures have a sum of 180</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Symmetry</button>
+            <div class="content">
+            <p>A one-to-one correspondence in size, form and arrangement of parts.</p>
+            </div>
+
+            <button class="collapsible" data-theme="b">Table of Values</button>
+            <div class="content">
+            <p>A chart that organizes data in rows and columns to illustrate facts and figures.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Variable</button>
+            <div class="content">
+            <p>A symbol that represents a quantity.</p>
+            </div>
+
+            <button class="collapsible" data-theme="d">Venn Diagram</button>
+            <div class="content">
+            <p>A representation that uses circles to show relationship between two or more sets.</p>
+            </div>
+
+            </div>
+          </div>
+
+
+            <div>
+              <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+            </div>
+        </div><!--end of div for collapse-->
+      </div>
+
+
+  </div>
+  </div>
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

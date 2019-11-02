@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/movingbackground.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+
+
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h1>Math Learning|SJES</h1>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+    <div text-align="center"><img src="images/headerfinal.png"  /></div>
+
+
+      <ul data-role="listview" data-inset="true">
+        <button data-theme="f" id="apDiv1">Chapter 1</button>
+        <button data-theme="e" id="apDiv2">Chapter 2</button>
+        <button data-theme="b" id="apDiv3">Chapter 3</button>
+        <button data-theme="d" id="apDiv4">Chapter 4</button>
+      </ul>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--External Contents-->
+<audio id="clicked">
+          <source src="sounds/click.wav" type="audio/ogg">
+</audio>
+<!--External Scripts when button clicked-->
+<script>
+$(function(){
+    function playOnClick(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = '6gradechapter1.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv1').click(function(){
+       playOnClick();
+   });
+});
+
+$(function(){
+    function playOnClick2(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = '6gradechapter2.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv2').click(function(){
+       playOnClick2();
+   });
+});
+
+$(function(){
+    function playOnClick3(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = '6gradechapter3.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv3').click(function(){
+       playOnClick3();
+   });
+});
+$(function(){
+    function playOnClick4(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = '6gradechapter4.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv4').click(function(){
+       playOnClick4();
+   });
+});
+
+</script> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

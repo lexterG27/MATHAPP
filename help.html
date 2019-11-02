@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/movingbackground.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h1>Math Learning|SJES</h1>
+    </div>
+    <div class="hero-bkg-animated">
+      <div data-role="content" role="main">
+
+          <img src="images/headerfinal.png"  />
+           <div data-content-theme="b">
+             <div data-role="collapsible" data-collapsed="false" data-theme="d">
+          <h2>&nbsp;&nbsp;&nbsp;Lessons Page</h2>
+          <p align="left"></b>This page allows you to read lessons and apply what you have learned by answering the Application and Problem Solving part of the lesson. Each Grade, an intended lesson is given per chapter.</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="false" data-theme="e">
+          <h2>&nbsp;&nbsp;&nbsp;Definition of Terms</h2>
+          <p align="left">This page allows you to know the terms used in Mathematics to have a better understanding. A figure is also added for the convenience of the user.</p>
+        </div> 
+
+        <div data-role="collapsible" data-collapsed="false" data-theme="b">
+          <h2>&nbsp;&nbsp;&nbsp;Quiz</h2>
+          <p align="left">This page allows the user to apply what he learned from the topics. It is divided into three sets of questions: <b>(1) Easy, (2) Moderate and (3) Difficult</b></p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="false" data-theme="e">
+          <h2>&nbsp;&nbsp;&nbsp;Video Tutorials</h2>
+          <p align="left">This page makes the app more convenient to use because of the embedded videos added into the application.</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="false" data-theme="d">
+          <h2>&nbsp;&nbsp;&nbsp;About</h2>
+          <p align="left">This page discusses the scope of the app including the features of the developed educational app as well as the contact details of the developers of the app just in case there is a problem in the application.</p>
+        </div>
+
+            <div>
+              <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+            </div>
+      </div>
+
+
+  </div>
+  </div>
+
+
+
+
+<!--External Contents-->
+<audio id="clicked">
+          <source src="sounds/click.wav" type="audio/ogg">
+</audio>
+
+<!--External Scripts when button clicked-->
+<script>
+$(function(){
+    function playOnClick(){
+      var sound = $("#clicked")[0];     
+      sound.addEventListener('ended', function() {        
+          window.location = 'choosegrade.html';        
+      }, false);
+      sound.play();   
+   }
+   $('#apDiv1').click(function(){
+       playOnClick();
+   });
+});
+
+</script> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
