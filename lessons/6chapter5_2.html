@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Addition of Integers</h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>Mrs. Reyes bought fruits which cost ₱ 700.00 from a wholesaler and sold them in her fruit stand. On Monday , her sales was ₱ 800.00; and on Tuesday, ₱ 500.00.But on Wednesday, she lost  ₱  400.00 because some of the fruits  were already rotten. Considering the sales from Monday to Wednesday, did  Mrs.  Reyes gain or lose?</p>
+              <h3>EXPLORE</h3>
+              <p>To know whether  Mrs. Reyes gained or lost, we have to combine her total sales which will be then be compared with her  capital. By solving we have:<br> <br><b>(+800)+(+500)+(-400)=900</b></p>
+            <p>Therefore, the total sales from Monday to Wednesday is  ₱ 900.00.Comparing this to the capital of ₱ 700.00, we can say that Mrs. Reyes gained ₱ 200.00. Since her total sales of ₱ 900.00 is more than her capital which is ₱ 700.00.</p>
+
+              <h3>EXPLAIN</h3>
+              <p>Addition is the same as “combining”. How do we combine integers? Study the number line below.</p>
+              <p><i>Examples</i><br><b>(+4)+(+3) =+7<br>(-4)+(-3)=-7<br>(-7)+4=-3 </b></p>
+
+              <p>In using the number line for adding integers:</p>
+              <blockquote class="bordered">
+                  • Always start at zero.<br>
+                  • Add a positive integer by moving to the right on the number line.<br>
+                  • Add a positive integer by moving to the left on the number line.
+              </blockquote>
+
+              <p>Shown below are the tiles colored white and black.  Let the black tiles represent positive integers, while the white tiles represent negative integers.<br>What happens when we put together 1 black tile and another white tile?</p>
+              <img src="../images/87.jpg" style="max-width: 100%" />
+              <p>This will produce 2 black tiles.</p>
+              <img src="../images/88.jpg" style="max-width: 100%" />
+              <p>Now, how about if we put together 1 white tile and another white tile?</p>
+              <img src="../images/89.jpg" style="max-width: 100%" />
+              <p>This will produce two white tiles.</p>
+              <img src="../images/90.jpg" style="max-width: 100%" />
+              <p>What will happen if we put together 1 black tile and 1 while tile?</p>
+              <img src="../images/91.jpg" style="max-width: 100%" />
+
+              <p>Observe that the two tiles represent opposite signed numbers which  are positive and negative.Any number paired to its opposite will produce a “zero pair.” They cancel each other out.A zero pair is pair of numbers whose sum is zero.</p>
+
+              <p><b>Example</b><br>Show the sum of +2 and +4 using tiles.<br>Let us show first +2 using the tiles. </p>
+              <img src="../images/92.jpg" style="max-width: 100%" />
+              <p>Then do the same for +4</p>
+              <img src="../images/93.jpg" style="max-width: 100%" />
+              <p>Now, we get the sum of +2 and +4, to get the sum of two positive integers. We simply put them together. Now, the result will be</p>
+              <img src="../images/94.jpg" style="max-width: 100%" />
+
+              <p>As we combine the tiles, we can see that the result will be 6 tiles.Therefore, the sum of +2 and +4 is +6.</p>
+              <h3></h3>
+              <p></p>
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

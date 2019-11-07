@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Subtraction of Integers </h2>
+            </div>
+
+            <div class="content">
+              <h3>ENGAGE</h3>
+              <p>The temperature in Baguio City was 12°C in the morning. It dropped to 8°C in the evening. What is the difference between these temperature?</p>
+
+              <h3>EXPLORE</h3>
+              <p>To get difference between the two temperatures, we need to subtract 8°C from 12°C. We can formulate the number sentence<br><b>(+12) – (+8) =n.</b></p>
+
+              <p>Subtraction integers is adding the opposite of the subtrahend to the     minuend.  In this case, the opposite of +8 is. We add -8 to +12, giving us  +4. Therefore, Baguio City’s temperatures between morning and evening differ 4°C.</p>
+              <h3>EXPLAIN</h3>
+              <p>Referring to the previous example, we can see that by using the operation on subtraction we arrived at the answer which is 4. One of the ways to subtract integers is by using example.</p>
+              <p><b>Example</b><br>(+5) – (+2)=__</p>
+
+              <img src="../images/95.jpg" style="max-width: 100%" />
+              <p>Take away 2 black tiles from 5 black tiles. Three black tiles remain.
+              <br><b>Answer:</b>+3</p>
+              <br><br>
+              <h3>Math Challenge</h3>
+              <p>
+
+              1.  The sum of two integers is -457. If one of the integers is 192, what is the other integer?<br>
+
+              2.  At the beginning, Kim has 25 cards. He then gave 11 cards to his friend. His cousin came over and gave him 17 cards. His uncle also came and gave him18 cards. How many cards does he have now?<br>
+
+              3.  One integer is 2 more than 5 times another integer. If the difference of the two integers is 26, what is the smaller integer?<br>
+
+              4.  Anna was born in the year 1995. If she subtracted her birth year from the birth year of her father, the difference is -30. In what year was her father born?<br>
+
+              5.  From the ground floor, an elevator goes up 8 floors and then goes down 6 floors. At what floor did the elevator stop?<br>
+
+              6.  Find two integers whose sum is 2 and whose difference is 8.<br>
+
+              7.   A group of hikers on a mountain started climbing at an elevation 3350 feet above sea level and stopped to take their meal at an elevation of 2160 feet above sea level.<br>
+              a)  What was the change in elevation between the two points?<br>
+              b)  Based on the answer on a, were the hikers going up or down the mountain?<br>
+
+              8.  A professional diver dives from a ledge 65 feet above the surface of the water. The diver  reaches an depth of 15 feet underwater before returning to the surface .What was the diver’s change in elevation from the highest point to the lowest point of the dive?
+              </p>
+
+              <blockquote class="bordered">
+                <b>KEY IDEAS</b><br>1. Two integers are opposites if their distance from 0 on the number line are the same.<br>2. A number and its opposite are called additive inverses.<br>3. In subtracting integers, add the additive inverse of the subtrahend to the minuend.
+              </blockquote>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
