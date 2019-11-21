@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/movingbackground.css" />
+  <script src="js/underscore-min.js"></script>
+  <script src="js/underscore.js"></script>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+  <!--Scripts for Quiz-->
+  <script>
+    var quiztitle = "";
+    var quiz = _.shuffle([
+        {
+            "question"      :   "   5/12+1/4+1/18 =  _______ ",
+            "image"         :   "",
+            "choices"       :   [
+                                    "26/36",
+                                    "13/18",
+                                    "7/18",
+                                    "7/36"
+                                ],
+            "correct"       :   "13/18",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "Mary has 6/7  kg of sugar.She used 1/2  of it for champorado.Howmuch sugar did Mary use for champorado?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "6/14",
+                                    "3/14",
+                                    "3/7",
+                                    "6/7"
+                                ],
+            "correct"       :   "3/7",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "Divide: 12/13 ÷ 8/39",
+            "image"         :   "",
+            "choices"       :   [
+                                    "2/9",
+                                    "5/2",
+                                    "9/2",
+                                    "4 1/2"
+                                ],
+            "correct"       :   "4 1/2",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "23.8 ÷ 0.7 = _______",
+            "image"         :   "",
+            "choices"       :   [
+                                    "34",
+                                    "35",
+                                    "32",
+                                    "33"
+                                ],
+            "correct"       :   "34",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "6/7    =  12/14 =   ?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "12/7",
+                                    "6/14",
+                                    "18/21",
+                                    "9/7"
+                                ],
+            "correct"       :   "18/21",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "For every 8 mango trees in the orchard, there are 4 star apple trees. If there are 1320 trees, how many trees of each kind are there",
+            "image"         :   "",
+            "choices"       :   [
+                                    "880 mango and 440 star apple",
+                                    "800 mango and 400 star apple",
+                                    "440 mango and 880 star apple",
+                                    "400 mango and 800 star apple"
+                                ],
+            "correct"       :   "880 mango and 440 star apple",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "A car is able to travel 210km in 3 hours. How far can it travel in 5 hour?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "340 km",
+                                    "350 km",
+                                    "330 km",
+                                    "320 km"
+                                ],
+            "correct"       :   "350 km",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "Find two integers whose sum is 2 and whose difference is 8.",
+            "image"         :   "",
+            "choices"       :   [
+                                    "3 and -5",
+                                    "3 and 5",
+                                    "-3 and 5",
+                                    "-3 and -5"
+                                ],
+            "correct"       :   "-3 and 5",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "47.    Luisa took ₱ 80.00 from her coin bank on Thursday. Then on the following day, she took another ₱ 50.00. What was the total amount she took from her coin bank?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "₱120",
+                                    "₱130",
+                                    "₱110",
+                                    "₱140"
+                                ],
+            "correct"       :   "₱130",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "Anna was born in the year 1995. If she subtracted her birth year from the birth year of her father, the difference is -30. In what year was her father born?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "1960",
+                                    "1975",
+                                    "1970",
+                                    "1965"
+                                ],
+            "correct"       :   "1965",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "The sum of the ages of Sam and Matt is 29. Then sum of the ages of Sam and Ben is 26. Then sum of the ages of Matt and Ben is 31. How old is the youngest among the three boys?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "24 years old",
+                                    "7 years old",
+                                    "22 years old",
+                                    "20 years old"
+                                ],
+            "correct"       :   "7 years old",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "At the beginning, Kim has 25 cards. He then gave 11 cards to his friend. His cousin came over and gave him 17 cards. His uncle also came and gave him18 cards. How many cards does he have now?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "49 cards",
+                                    "50 cards",
+                                    "48 cards",
+                                    "47 cards"
+                                ],
+            "correct"       :   "49 cards",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "From the ground floor, an elevator goes up 8 floors and then goes down 6 floors. At what floor did the elevator stop?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "2nd floor",
+                                    "4th floor",
+                                    "3rd floor",
+                                    "1st floor"
+                                ],
+            "correct"       :   "2nd floor",
+            "explanation"   :   "",
+        },
+        {
+            "question"      :   "The sum of two integers is -457. If one of the integers is 192, what is the other integer?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "-649",
+                                    "648",
+                                    "649",
+                                    "-648"
+                                ],
+            "correct"       :   "-649",
+            "explanation"   :   "",
+        },
+
+        {
+            "question"      :   "The usual price of a pair of roller blades was $150. At sale, Joanne bought the pair of rollerblades at a discount of 20%.How much did she pay for the pair of roller blades?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "120$",
+                                    "100$",
+                                    "110$",
+                                    "130$"
+                                ],
+            "correct"       :   "120$",
+            "explanation"   :   "",
+        },
+        
+        
+
+    ]);
+    /******* No need to edit below this line *********/
+    var currentquestion = 0, score = 0, submt=true, picked;
+
+    jQuery(document).ready(function($){
+  
+        function htmlEncode(value){
+          return $(document.createElement('div')).text(value).html();
+        }
+
+        function addChoices(choices){
+            if(typeof choices !== "undefined" && $.type(choices) == "array"){
+                $('#choice-block').empty();
+                for(var i=0;i<choices.length; i++){
+
+                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
+                }
+            }
+        }
+
+        
+        /**
+         * Resets all of the fields to prepare for next question
+         */
+        function nextQuestion(){
+            submt = true;
+            $('#explanation').empty();
+            $('#question').text(quiz[currentquestion]['question']);
+            $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+            if(quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != ""){
+                if($('#question-image').length == 0){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
+                } else {
+                    $('#question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question']));
+                }
+            } else {
+                $('#question-image').remove();
+            }
+            addChoices(quiz[currentquestion]['choices']);
+            setupButtons();
+        }
+        /**
+         * After a selection is submitted, checks if its the right answer
+         *
+         * @param {choice} number The li zero-based index of the choice picked
+         */
+        function processQuestion(choice){
+            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
+                //$('.choice').eq(choice).css({'background-color':'#50D943'});
+                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+      /* Play sound if correct*/
+                var sound = $("#soundcorrect")[0];     
+                sound.addEventListener('ended', function() {      
+                }, false);
+                sound.play(); 
+
+                score++;
+            } else {
+                $('.choice').eq(choice).css({'background-color':'#D92623'});
+                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                /* Play sound if wrong*/
+                var sound = $("#soundwrong")[0];     
+                sound.addEventListener('ended', function() {      
+                }, false);
+                sound.play(); 
+            }
+            currentquestion++;
+            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+                if(currentquestion == quiz.length){
+                    endQuiz();
+                } else {
+                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                    nextQuestion();
+                }
+            })
+        }
+        /**
+         * Sets up the event listeners for each button.
+         */
+        function setupButtons(){
+            $('.choice').on('mouseover', function(){
+                $(this).css({'background-color':'#e1e1e1'});
+            });
+            $('.choice').on('mouseout', function(){
+                $(this).css({'background-color':'#fff'});
+            })
+            $('.choice').on('click', function(){
+                picked = $(this).attr('data-index');
+                $('.choice').removeAttr('style').off('mouseout mouseover');
+                $(this).css({'border-color':'#222','font-weight':700,'background-color':'#c1c1c1'});
+                if(submt){
+                    submt=false;
+                    $('#submitbutton').css({'color':'#000'}).on('click', function(){
+                        $('.choice').off('click');
+                        $(this).off('click');
+                        processQuestion(picked);
+                    });
+                }
+            })
+        }
+        
+        /**
+         * Quiz ends, display a message.
+         */
+        function endQuiz(){
+            $('#explanation').empty();
+            $('#question').empty();
+            $('#choice-block').empty();
+            $('#submitbutton').remove();
+            $('#question').text("You got " + score + " out of " + quiz.length + " correct.");
+            $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '%').insertAfter('#question');
+          /*show button after game and proceed to main menu */
+            $('#mybutton').show();
+            $(document).on('click','#mybutton',function(){
+                window.location='quizgrade4easy.html';
+            });  
+
+        }
+        /**
+         * Runs the first time and creates all of the elements for the quiz
+         */
+        function init(){
+            //add title
+            if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string"){
+                $(document.createElement('h1')).text(quiztitle).appendTo('#frame');
+            } else {
+                $(document.createElement('h1')).text("Quiz").appendTo('#frame');
+            }
+            //add pager and questions
+            if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
+                //add pager
+                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+                //add first question
+                $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
+                //add image if present
+                if(quiz[0].hasOwnProperty('image') && quiz[0]['image'] != ""){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+                }
+                $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('&nbsp;').appendTo('#frame');
+            
+                //questions holder
+                $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+            
+                //add choices
+                addChoices(quiz[0]['choices']);
+            
+                //add submit button
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+            
+                setupButtons();
+            }
+        }
+        
+        init();
+    });
+    </script>
+    <style type="text/css" media="all">
+        /*css reset */
+        html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{
+          border:0;
+          font-size:100%;
+          font:inherit;
+          vertical-align:baseline;
+          margin:0;
+          padding:0;
+        }           
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+          display:block;
+        } 
+        body{
+          line-height:1; 
+          font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } 
+        ol,ul{
+          list-style:none;
+        }
+        strong{
+          font-weight:700;
+        }
+        #frame{
+          max-width:620px;
+          width:auto;
+          border:1px solid #ccc;
+          background:#fff;
+          padding:10px;
+          margin:3px;}
+        h1{
+          font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-align:left;
+          border-bottom:1px solid #999;
+          padding:0;
+          width:auto
+        }
+        h2{
+          font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:0;
+          text-align:center;
+          margin:20px 0;
+        }
+        p.pager{
+          margin:5px 0 5px; 
+          font:bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color:#999;
+        }
+        #choice-block{
+          display:block;list-style:none;
+          margin:0;
+          padding:0;
+        }
+        #submitbutton{
+          background:#3CB371;
+        }
+        #submitbutton:hover{
+          background:#3CB371;
+        }
+        #explanation{
+          margin:0 auto;
+          padding:20px;
+          width:75%;
+        }
+        .choice-box{
+          display:block;
+          text-align:center;
+          margin:8px auto;
+          padding:10px 0;
+          border:1px solid #666;
+          cursor:pointer;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;}
+
+
+    #mybutton{
+      display:none;
+    }
+    </style>
+
+</head>
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push"></div>
+
+    <div data-role="header" data-theme="b">
+      <h1>Math Learning|SJES</h1>
+    </div>
+    <div class="hero-bkg-animated">
+    <!--Content Goes Here-->
+    <div data-role="content" role="main">
+    
+      <div id="frame" role="content"><img src="images/headerfinal.png" ></div>
+
+<button id="mybutton">Try Again?</button>
+
+
+      <!--Footer-->
+      <div><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div> 
+    </div>
+  </div>
+</div><!--End of role-page-->
+
+
+<!--External Contents-->
+<audio id="soundcorrect">
+          <source src="sounds/correct.mp3" type="audio/ogg" hidden="true">
+</audio>
+<audio id="soundwrong">
+          <source src="sounds/wrong.mp3" type="audio/ogg" hidden="true">
+</audio>
+
+<!--External Audio Background Music-->
+<div id="player">
+    <embed name="myMusic" loop="infinite" hidden="true" src="sounds\fun.mp3"></embed>
+</div>
+
+
+
+
+</body>
+</html>
