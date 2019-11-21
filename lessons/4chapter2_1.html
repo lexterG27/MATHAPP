@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Multiplying Numbers up to Three Digits by Numbers up to Two Digits without Regrouping</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>There are 323 bananas in as basket.How many bananas are there in 32 baskets?
+
+              <br><br>What is asked for in the problem?
+              <br><br>What operation are you going to use?
+              <br><br>How will you solve the given problem?
+
+              <br><br>To solve the problem, you need to multiply 323 by 32.
+              The number sentence is 32 x 323 = n
+              Study the solution below using the place value chart.
+              </p>
+
+              <p>Step 1: Multiply 3 hundreds, 2 tens, and 3 ones by 2 ones.</p>
+              <img src="../images/117.jpg" style="max-width: 100%" />
+              <p2>Step 2: Multiply 3 hundreds, 2 tens and 3 ones by 3 tens.</p2>
+              <img src="../images/118.jpg" style="max-width: 100%" />
+              <p>Step 3: Add the partial products.</p>
+              <img src="../images/119.jpg" style="max-width: 100%" />
+              <p>So, there are 10 336 bananas in 32 baskets.
+              <br>Study the short method:
+              </p>
+              <img src="../images/120.jpg" style="max-width: 100%" />
+
+              <h3>Apply Your Skills</h3>
+              <p>Read and solve:
+
+              <br>1.  Mr. Cruz has a coconut plantation. There are 323 coconut trees in a row. If there are 32 rows, how many coconut trees are there in all?
+
+              <br>2.  Mr. Basabica sold 13 boxes of buttons. If each box contained 23 buttons, how many buttons did he sell?
+
+              <br>3.  Ingrid spends Php800 a week. How much does she spend in a five months of 20 week?
+
+              <br>4.  Mario pays Php1,250 a month for his room rental. How much does he pay in 11 months?
+
+              <br>5.  Mrs. Guillermo buys 22 kilograms of chickens for the 17th birthday party of her daughter. If a kilogram of chicken costs Php 134, how much does Mrs. Guillermo pay for the chicken?
+              </p>
+
+              
+              <h3></h3>
+              <p></p>
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

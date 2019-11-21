@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Places value and Value of a Digit in a Given Decimal Number through Hundredths</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Lyka used 0.25 meter of lace for a doll’s dress.</p>
+              <p>Do you know what 0.25 means? Study how 0.25 is written on the place value chart. Study the chart below.</p>
+               <img src="../images/135.jpg" style="max-width: 100%" />
+               <p>In 0.25, the digit is a place holder for the ones place. The digit 2 in the tenths place. Its value is 0.2. The digit 5 is in the hundredths place, its value is 0.05. Hence, 0.25 means 2 tenths and 5 hundredths,<br>The decimal point separates the whole number from the decimal numbers.
+              </p>
+
+              <p><i>Here are other examples;</i>
+                <br>In 0.56,5 is in the tenths place. Its value is 0.5.
+                <br><br>Six is in the hundredths place. Its value is 0.06.
+                <br><br>In 0.09,0 in in the tenths place. Nine in the hundredths place.
+                <br><br>Its value is 0.09.
+                </p>
+              <h3>Keep Moving!</h3>
+              <p>A. Complete the table. Item 1 is done for you.</p>
+              <table border="1" width="100%">
+                <tr>
+                  <th></th>
+                  <th>Decimal Number</th>
+                  <th>Place Value</th>
+                  <th>Value</th>
+                </tr>
+                <tr>
+                  <td>1. </td>
+                  <td>0.15</td>
+                  <td>Tenths</td>
+                  <td>0.1</td>
+                </tr>
+                <tr>
+                  <td>2. </td>
+                  <td>0.26</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3. </td>
+                  <td>0.39</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4. </td>
+                  <td>0.45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5. </td>
+                  <td>0.76</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6. </td>
+                  <td>0.94</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

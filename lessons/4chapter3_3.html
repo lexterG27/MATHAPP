@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Finding the Common Multiples And the Least Common Multiple (LCM) of Two Numbers</h2>
+            </div>
+
+            <div class="content">
+             
+              <h3>EXPLORE</h3>
+              <p>Carina bake puto. She wants to pack them in boxes of 8 and 12 pieces. What is the number of pieces of puto that she can pack using the boxes?<br>To solve the problem, you need to find the least common multiple or LCM of 8 and 12.</p>
+
+              <p>Here’s how you do it.</p>
+              <img src="../images/100.jpg" style="max-width: 100%" />
+
+              <p><br>•  Notice that 24 is the least common multiple or LCM of 8 and 12. Therefore, the smallest number of pieces of  puto  that can be packed using the boxes is 24.<br>• You do not include 0 when dealing with common multiples.</p>
+
+              <h3>Get Moving</h3>
+              <p>A. Find the common multiples and least common multiple (LCM) of each pair of numbers. Some of the multiples are already given.</p>
+
+              <img src="../images/101.jpg" style="max-width: 100%" />
+
+              <p>B. Write the letter of the correct answer in your notebook.</p>
+              <img src="../images/102.jpg" style="max-width: 100%" />
+
+              <h3>Apply Your Skills</h3>
+              <p>Answer the following questions and write the correct answers in your notebook.
+
+              <br>1.  Find the first three common multiples and LCM of 16, 12, and 8.
+              <br>2.  Ferdie works as a food crew every three days , while Angels attends to her job as a cashier every other day.If Ferdie and Angel start  on the fifth day of the month, when will both of them report for work together?
+              <br>3.  The pupils of Dupag Elementary School collected used plastic bottles for recycling. They arranged the bottles in boxes of 5 and 8. What is the least numbers of bottles the pupils gathered in all?
+
+              </p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Rounding Numbers to the Nearest Thousands and Ten Thousands</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>The diameter of the Earth at the Equator is about 12 756 kilometers. 
+              <br>
+              <br>About how many thousand kilometers is the diameter of the Earth at the Equator?
+              <br>
+              <br>You can find the answer by rounding 12 756 to the nearest thousands
+              <br>
+              <br>Study the number line below.
+              </p>
+              <img src="../images/116.jpg" style="max-width: 100%" />
+
+              <p>To which number is 12 756 closer, 12 000 or 13 000?
+
+              <br>Since 12 756 is closer to 13 000, you can say that 12 756 becomes 13 000 when rounded to the nearest thousands. Hence, the diameter of the Earth at the equator is about 13 000 kilometers.
+              </p>
+              
+              <table border="1" width="100%">
+              <tr>
+                <th>Number</th>
+                <th>Rounded to Thousands</th>
+                <th>Rounded to Ten Thousands</th>
+              </tr>
+              <tr>
+                <td>24 278</td>
+                <td>24 000</td>
+                <td>20 000</td>
+              </tr>
+              <tr>
+                <td>38 642</td>
+                <td>39 000</td>
+                <td>40 000</td>
+              </tr>
+              <tr>
+                <td>42 752</td>
+                <td>43 000</td>
+                <td>40 000</td>
+              </tr>
+              <tr>
+                <td>95 245</td>
+                <td>95 000</td>
+                <td>100 000</td>
+              </tr>
+              <tr>
+                <td>78 500</td>
+                <td>79 000</td>
+                <td>80 000</td>
+              </tr>
+              <tr>
+                <td>50 000</td>
+                <td>50 000</td>
+                <td>50 000</td>
+              </tr>
+              </table>
+
+              <p>In rounding numbers, identify the rounding place first. If the digit to the right of the rounding place is below 5, round the number down by changing the rest of the digits to the right to zero. If the digit to the right of the rounding place is 5 or greater, round the number up by changing the rest of the digits to the right into zero and adding 1 to the digit in the rounding place.</p>
+
+
+              <h3>Get Moving</h3>
+              <p>Round each number to the place value of the underlined digit.
+                <br>1)  67 436 ___________________
+                <br>2)  34 673 ___________________
+                <br>3)  87 567 ___________________
+                <br>4)  82 562 ___________________
+                <br>5)  34 982 ___________________
+              </p>
+
+
+              <h3>Apply Your Skills</h3>
+              <p>Read and write the answers in your notebook.
+                <br>1.  What number, whose sum of its digits is 26, becomes 6000 when rounded to the nearest thousands? List 3 possible answers.
+                <br>2.  A number rounds off to 4000. The digit in the hundreds place is twice the digit in the tens place. The sum of the digits is 12. The number uses only two different digits. Find the number.
+              </p>
+
+              
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

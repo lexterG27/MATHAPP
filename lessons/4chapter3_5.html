@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 5 - Creating Problems Involving GCF and LCM</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>How will you create a problem ivolving Greatest Common Factor (GCF) or Least Common Multiple (LCM) given the following information?</p>
+              <p>You can create proble by following this guide:
+              <br>• Familiarize yourself with the concepts of GCF and LCM and their application of real-life solutions.
+              <br>• Think of the type of problem you want to create 
+              <br>• Read some problems and study their solutions
+              </p>
+
+              <blockquote class="bordered">
+                Hanah has 54 eggs. Joy has 60 eggs. They want to put the eggs in a tray so that each tray will have the same number of eggs.
+              </blockquote>
+
+              <blockquote class="bordered">
+                ABM bus for Baguio City leaves Manila every 30 minutes. JBM bus for Baguio City leaves Manila every 20 minutes.
+              </blockquote>
+
+              <p>Study the following problems as examples for the above information.
+
+                <br>Problem A involves finding the Greatest Comon Factor (GCF).
+
+                  <br>Hannah has 54 eggs. Joy has 60 eggs. They want to put the eggs in a tray so that each tray will have the same number of eggs.
+
+                  <br>What is the greatest posibble number of eggs in each tray and the number of trays that they can use?
+              </p>
+
+              
+              <h3></h3>
+              <p></p>
+              <h3></h3>
+              <p></p>
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

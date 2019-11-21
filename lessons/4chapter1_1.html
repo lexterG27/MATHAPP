@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Visualizing Numbers </h2>
+            </div>
+
+            <div class="content">
+            <h3>Visualizing Numbers up to 100 000 with Emphasis on Numbers 10 001 to 50 000</h3>
+              <h3>EXPLORE</h3>
+              <p>A group of farmers donated a total  of 12 364 kilograms of rice to the typhoon victims. Can you imagine how big the number 12 364 is? One way you can imagine is to think of discs to represent the numbers as shown below.</p>
+              <img src="../images/104.jpg" style="max-width: 100%" />
+              <img src="../images/105.jpg" style="max-width: 100%" />
+              <h3>Get Moving</h3>
+              <p>What number is represented by these number discs? Write your answer in your notebook.</p>
+              <img src="../images/106.jpg" style="max-width: 100%" />
+              <img src="../images/107.jpg" style="max-width: 100%" />
+              <img src="../images/107b.jpg" style="max-width: 100%" />
+              <h3>Apply Your Skills</h3>
+              <p>Read the following items. Then, write your answer to each item in your notebook.
+                <br>1.  A cargo ship is loaded with 35 650 kilograms of rice. Draw number discs to show the given number
+                <br>2.  There were 24 893 children and adults who watched the football game. Draw number discs to show the given number.
+                <br>3.  Mary used 4 pieces of 10 000s discs, 8 pieces of 1000s discs, 7 pieces of 100s discs, and 6 pieces of 10s discs to represent a number. What number is shown by her number discs?
+                <br>4.  How will you show the number 40 090 using number discs?
+                </p>
+
+
+                <br>
+                <br>
+                <br>
+                <h3>Visualizing Numbers up to 100 000 with Emphasis on Numbers 50 001 -100 000</h3>
+                <h3>EXPLORE</h3>
+                <p>A total of 54 675 teachers and students joined the “Save Mother Earth” Campaign. How will you show 54 675?
+                <br>You can show number discs to show 54 675.
+                </p>
+                <img src="../images/108.jpg" style="max-width: 100%" />
+                <img src="../images/109.jpg" style="max-width: 100%" />
+                <img src="../images/110.jpg" style="max-width: 100%" />
+
+
+                <h3>Get Moving</h3>
+                <p>What number is represented by these number discs? Write your answers in your notebook.</p>
+
+                <img src="../images/111.jpg" style="max-width: 100%" />
+                <img src="../images/112.jpg" style="max-width: 100%" />
+                <img src="../images/113.jpg" style="max-width: 100%" />
+                <img src="../images/114.jpg" style="max-width: 100%" />
+                <img src="../images/114.jpg" style="max-width: 100%" />
+
+                <h3>Apply Your Skills!</h3>
+                <p>
+                  Write your answer to each item in your notebook.
+                  <br>1.  There are 68 950 tree seedlings distributed to the barangays by the Department of Environment and Natural Resources. Draw numbers discs to show the given number.
+                  <br>2.  Mr. Ong bought some appliances worth Php 85, 675. Represent this amount using number discs.
+                  <br>3.  Which number is 10 000 smaller than 89 999?
+                  99 890          79 990          79 890            69 990
+                  <br>4.  Which number is 10 000 greater than 75 650?
+                  85 700          85 650          95 650            65 650
+                  </p>
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

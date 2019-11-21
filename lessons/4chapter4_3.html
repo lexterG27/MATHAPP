@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Renaming Fractions whose Denominators are Factors of 10 and 100 to Decimal number</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Mang Timoteo cut a bamboo pole in to 10 equal parts and maid them in to 10 coin banks. If he solved some and had 6/10 of the coin bank left, what decimal part of the coin bank was left? <br><br>How do you rename a fraction to a decimal number?
+              </p>
+              <img src="../images/134.jpg" style="max-width: 100%" />
+              <p>The illustration shows that 6 coin banks were sold out of 10 or 6/10.How do you rename 6/10 to a decimal number?</p>
+
+              <p>Notice that the denominator 10 has 0ne zero. The number of zeros in the denominator is equal to the number of decimal places after the decimal point in a decimal number.<br>1)  ½ = 5/10 = 0.5<br>2) 1/5 = 2/10 = 0.2<br>3)3/5 = 6/10 = 0.6<br>4) 4/5 = 8/10 = 0.8</p>
+
+              <p>How will you write 35/100 as a decimal? 8/100?</p>
+
+              <p>Look at how these fraction are written as decimals.<br>1)  8/100= 32/100 = 0.32<br>2) 9/20 = 45/100 = 0.45<br>3)12/50 = 24/100 = 0.24<br>4) 3/50 = 6/100 =0.06<br></p>
+              <h3>Get Moving</h3>
+              <p>Rename the following to decimal numbers.<br>1) 4/10<br>2) 80/100<br>3) 4/5<br>4) 12/25<br>5) 36/50</p>
+              <h3>Apply Your Skills</h3>
+              <p>Solve these problems.
+              <br>1.  In a long jump contest, Sharon recorded 75/100 mater while tabern had a record of 50/100 meter. How much farther did Sharon jump than tabern? Write the answer in decimal form.
+
+              <br>2.  John has 9/10 meter of bamboo. Dick has 7/10 meter.
+              Write the fractions in decimal form. 
+
+              <br>3.  Ester bought ¾ kilogram of fish and 14/25 kilogram of chicken. Write the fraction as decimals.
+              <br>4.  Chara used ½ meter of yellow ribbon for her headband and meter 1/5 of red ribbon for her dress. How many meters of ribbon did she use in all? Write the answer in decimal form.
+              </p>
+
+
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Place value and Value of a Digit in Numbers up to 100 000</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>In 2013, Barangay San Sebastian harvested 64 789 kilograms of mangoes.What does each digit in 64 789 mean? Study how 64 789 is written in the place value chart.</p>
+              <p><br>The digit 9 is in the ones place. Its value is 9.
+              <br>The digit 8 is in the tens place. Its value is 80.
+              <br>The digit 7 is in the hundreds place. Its value is 700.
+              <br>The digit 4 is in the ones place. Its value is 4000.
+              <br>The digit 6 is in the ten thousands place. It value is 60 000.
+              <br><br>The value of a digit is determined by multiplying that digit by its place value.
+              </p>
+              <h3>Get Moving!</h3>
+              <p>Write the missing numbers in your notebook.</p>
+              <p><br>1) 74 789 means  70 000  + _____  +  _____  +  _____  +  _____
+              <br>2)  34 567 means __________ +  4000  +  500  +  60  +  7
+              <br>3)  45 897 means  40 000  +  ______ _  +  800  +   90  +  7 
+              <br>4)  45 789 means  40 000   +  ________  +  700  +  80  +  9 
+              <br>5)  68 413 means  _______  +  ______  +   _____  +  _____   +  _____
+              </p>
+
+              <br>
+              <h3>Apply Your Skills</h3>
+              <p>A. Use the digits 4, 5, 6, 7, and 8 only once for problems 1 to 4.
+
+              <br>1.  Write the greatest number possible with 8 in the ten thousands place.
+
+              <br>2.  Write the least number possible with 5 in the thousands place.
+
+              <br>3.  Write the greatest number possible with 7 in the ten thousands place.
+
+              <br>4.  Write the least number possible with 6 in the thousands place.
+              </p>
+
+
+
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

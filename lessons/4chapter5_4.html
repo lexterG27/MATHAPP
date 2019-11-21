@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Identifying and Describing Triangles</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Mr. Medes showed a big triangle to his
+              class. He has to divide into small triangles of
+              different sizes. Look at how he divided it.
+              </p>
+
+              <p>How many small triangles does he have ? Are the sides and angles of each triangle equal ?</p>
+
+              <p>Triangles can be classified according to their angles.
+                  <br>A <b>right triangle </b>has a right angle which measures 900.       ABC is a right triangle.
+                  <br>An <b>acute triangle</b> has a 3 acute angles, each measuring less than 900.       DEF 
+                  is an acute triangle.
+                  <br>An <b>obtuse triangle</b> has an obtuse angle which measures more than 900.       GHI
+                  is an obtuse triangle.
+              </p>
+              <p>
+                Triangles can be classified according to their sides.
+                <br>An <b>equilateral triangle</b> has 3 equal sides.       JKL is an equilateral triangle.
+                <br>An <b>isosceles triangle</b> has 2 equal sides.       MNO is an isosceles triangle.
+                <br>A <b>scalene triangle</b> has no equal sides.       PQR is a scalene triangle.
+              </p>
+              <h3>Get Moving</h3>
+              <p>A. Identify the following triangles according to their angles:</p>
+              <img src="../images/143.jpg" style="max-width: 100%" />
+
+              <p>B. Identify the following triangles according to their sides:</p>
+              <img src="../images/144.jpg" style="max-width: 100%" />
+              <h3></h3>
+              <p></p>
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Finding Common Factors and the Greatest Common Factor (GCF)</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Alvin has 12 guavas and Elorde has 18 guavas. Each of them will share the guavas to their friends. What is the greatest number of guavas each of their friends get if Alvin and Elorde will give the same number of guavas.</p>
+
+              <p>You find the Greatest Common Factor (GCF)n of 12 and 18. Study the solution below.</p>
+              <p><b>Method 1</b><br>By listing the factors of 12 and 18
+                <br>Factors of 12, 1, 2, 3, 4, 6, and 12
+                <br>Factors of 18, 1, 2, 3, 6, 9, and 18<br>
+
+                By finding the common factors of 12 and 18 
+                <br>Common factors of 12 and 18, 1, 2, 3, and 6 
+           <br> By getting the Greatest Common Factor(GCF) of 12              and 18
+            The GCF of 12 and 18 is 6
+              </p>
+
+
+              <p><b>Method 2</b><br>By writing each number as a product of its prime factors.</p>
+              <img src="../images/96.jpg" style="max-width: 100%" />
+
+              <p>By multiplying the common prime fctors of 12 and 18.</p>
+              <img src="../images/97.jpg" style="max-width: 100%" />
+              <h3>Get Moving</h3>
+              <p>A. Write each number as a product of its prime factors. Use factor tree. The first one is done for you.</p>
+              <img src="../images/98.jpg" style="max-width: 100%" />
+              <p>B. List all the factors of each number. Then, find the common factors and greatest common factors of each pair of number.</p>
+              <img src="../images/99.jpg" style="max-width: 100%" />
+              <h3>Apply Your Skills</h3>
+              <p>Read and solve each problem and write your answers in your answer sheet.<br>1.  Ian and Isagani went fishing. Ian caught 21 fish and Isagani caught 28 fish. What is the greatest number of fish each could catch per hour, if they caught the same number of fish per hour?<br>2.  Mr. Rojas has 2 pieces of wood for his scrabble board. One has a width of 18cm and the other one has 20 cm. If both sizes of wood are to be cut into scrabble tiles of the same width without wasting any wood, ehat is the greatest width into the woods can be cut?
+</p>
+              <p></p>
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

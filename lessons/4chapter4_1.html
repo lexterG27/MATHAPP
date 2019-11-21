@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 1 - Visualizing Decimal Numbers Using Models like Blocks, Grids, Number Lines, and Money</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Look at the blocks or cubes model below to visualize 0.7.
+              <br>Observe that there are 10 cubes representing the whole.
+              </p>
+              <img src="../images/130.jpg" style="max-width: 100%" />
+              <p>Cross out 7 cubes from the whole unit.</p>
+              <p>There are 7 cubes crossed out of 10. This can be written as 7/10 in fraction form or 0.7 in decimal form.</p>
+              <img src="../images/131.jpg" style="max-width: 100%" />
+              <p>Look at the grid at the top. You observe that 100 squares. This means the whole is equally dividedinto 100 squares. There are 7 squares shaded out of 100 squares.7/100 can be written as 0.07 in decimal form.</p>
+
+              <br><br>
+              <p>Look at the illustration bellow. Notice the number of posts in the number of posts in the number line. These are 10 posts. 5 posts out of 10 are painted.5/10 of the posts are painted. 5/10 is written as 0.5 in decimal.</p>
+              <img src="../images/132.jpg" style="max-width: 100%" />
+              <p>Think of a Php1 coin. This equal to 100 centavos. 400 centavos can be written as 4/100 in fraction form or 0.40 in decimal form.</p>
+              <h3>Get Moving</h3>
+              <p>Draw a grid or blocks to illustrate the following decimal numbers.<br>
+              <br>1) 0.4      <br>2) 0.6     <br>3) 0.25    <br>4) 0.50     <br>5) 0.075
+                </p>
+              <h3>Apply Your Skill</h3>
+              <p>Read and write the answer in your notebook. 
+              <br>1.  Shanot bought 0.75 kilogram of sugar. Draw a grid or blocks to show the given decimal number.
+              <br>2.  Cyrus paid Php 30 for a hand towel. Draw the paper bills and coins to show the given amount.
+              <br>3.  Cyryl hikes a distance of 0.75 kilometer in going to school every day. Draw a number line to show the distance.
+              <br>4.  Dejay painted 0.6 of the posts in the garden. If there were 10 posts, how many were painted? Draw the posts in a line to show your answer.
+              <br>5.  Timothy harvested some vegetable in the in the garden. The squash weighed 0.95 kilogram. Draw a weighing scale to show the given decimal number.
+              </p>
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

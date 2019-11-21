@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 2 - Renaming Decimals to Fractions.</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>     As a decimal, 0.7 has one digit after the decimal point.
+              <br><br>So, you rename 0.7 as 7/10 in fraction.
+              </p>
+               <img src="../images/133.jpg" style="max-width: 100%" />
+              <p>Look at how 0.14 is written as a fraction. The decimal number 0.14 is written as 14/100 in fraction form as shown in the hundred squares.</p>
+
+              <p>Study these examples of renaming decimals to fractions.<br>1)  0.5 = 5/10 or ½ <br>2)  0.4 = 4/10 or 2/5<br>3) 0.6 = 6/10 or 3/5<br>4)  0.28 = 28/100 or 7/ 25<br>5)  0.55 = 55/100 or 11/20</p>
+              <h3>Get Moving</h3>
+              <p>Rename the following decimal number to fractions: Item 1 is done for you. <br>
+              1)  0.2 = 2/10 or 1/5         <br>
+              2)  0.45  <br>
+              3)  0.56 <br>
+              4)  0.07 <br>
+              5)  0.08 <br>
+              6)  0.44 <br>
+              7)  0. 18 <br>
+              8)  0.95<br>
+              9)  0.8<br>
+              10) 0.64 <br>
+              </p>
+              <h3></h3>
+              <p></p>
+             
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

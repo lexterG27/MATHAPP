@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Estimating the products of 3- to 4-Digit Numbers by 2- to 3-Digit Numbers</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>If one kaing holds 272 atises, about how many atises are there in 21 kaing? 
+              <br>How will you solve for the answer to the given problem?
+
+              <br><br>The phrase “about how many” does not ask for an actual answer but an estimate. You will estimate the product to   solve for the answer.
+              </p>
+
+              <p>Study the solution below.
+              <br>Round each of the factors to its highest place value; then multiply the rounded numbers.
+
+                <br>&nbsp;&nbsp;&nbsp;272------->300
+
+              <br>x 21-------><u>x20</u>  
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6000
+              <br><br>
+              Answer: There are about 6000 atises in 21 kaing.
+              </p>
+
+
+              <h3>Get Moving</h3>
+              <p>Estimate the product. Then, find the actual product and compare it with the estimated product. Do this in your notebook. </p>
+              <img src="../images/127.jpg" style="max-width: 100%" />
+              <h3>Apply Your Skills</h3>
+              <p>A. Estimate each product. Then, compare the two estimated products. Write the correct symbol >, <, or = in the circle.
+
+              <br>1.  3456 x 34  ________     2734 x 36
+              <br>2.  457   x 563   ________     435   x 532
+              <br>3.  7291 x 36  ________    7554 x 41
+              </p>
+
+              <p>B.  Read and solve.
+
+              <br>1.  Will there be more of fewer zeros in the product when you multiply 30 x 800 than when you multiply 50 x 800?
+              Explain.
+
+              <br>2.  How many zeros will be in the product of 500 and 700?
+              What is the product?
+
+              <br>3.  Forty-three Grade 4 pupils of Odizee School of Achievers paid Php3,860 for the Boy Scouts’ Jamboree in Baguio City. Estimate how much money was cancelled.
+              </p>
+              
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

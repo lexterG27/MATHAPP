@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 3 - Reading and Writing Numbers up to 100 000 in Symbols and in Words</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>The Bureau of Forest Development donated three seedlings to each pupil in Region 2. The total number of seedlings donated was 64 821.
+
+              <br>How do you read and write the number 64 821 in words and in symbol?
+              
+              <br>The number 64 821 is read as “sixty-four thousand eight hundred twenty-one”. In symbol, it is 64 821.
+              </p>
+
+              <h3>Get Moving</h3>
+              <p>A. Write the missing number between the given numbers. Then read these numbers.
+              <br>
+              1)  45 456 ___________ 45  458
+              <br>2)  78 900 ___________ 78 892
+              <br>3)  67 123 ___________ 67 125
+              <br>4)  89 542 ___________ 89 544
+              <br>5)  56 899 ___________ 56 901
+              </p>
+
+              <p>
+                B.  Write the following numbers in words.
+              <br>1)  18 980
+              <br>2)  24 650 
+              <br>3)  56 087
+              <br>4) 67 924
+              <br>5) 79 346
+              <br>6) 90 542
+
+              </p>
+              <h3>Apply Your Skills</h3>
+              <p>A. 1. What is the largest 5-digit number having different digits?
+
+              <br>Write it in symbol and in words. __________________________
+
+                <br>2. What is the number next to 76 368? Write it in symbol and in words 
+                </p>
+
+                
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

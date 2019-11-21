@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic to Advance Math Learning App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="../css/movingbackground.css" />
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+
+
+<style>
+.bordered {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 5px solid yellowgreen;
+}
+h1,h2,h3,h5,h6{
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: justify;
+  text-indent: 1em;
+  line-height:  1.6;
+}
+ul,li{
+  text-align:justify;
+  /* Header/Logo Title */
+}
+.header {
+  padding: 5px;
+  text-align: left;
+  background:  #F0E68C;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Page Content */
+.content {
+  padding:20px;
+  background-color: #FFFFFF;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+</style>
+  <div data-role="page">
+    <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
+    <div data-role="header" data-theme="b" id="myHeader">
+      <h2>Math Learning|SJES</h2>
+    </div>
+    <div class="hero-bkg-animated">
+    <div data-role="content" role="main">
+        <!--Main content starts here-->
+            <div class="header">
+              <h2>Lesson 4 - Solving Real-Life Problems Involving GCF And LCM of Two Given Numbers
+</h2>
+            </div>
+
+            <div class="content">
+              <h3>EXPLORE</h3>
+              <p>Cherry baked 48 pieces of butter cookies
+              and 60 chocolate coockies. If she will put them
+              separately in boxes, what is the most number of
+              cookies that boxes will contain if these are of the 
+              same number?<br>
+              How will you solve for the answer to the
+              problem?<br>
+              You can use the 4-step plan in solving for the answer.
+              </p>
+              <img src="../images/103.jpg" style="max-width: 100%" />
+              <h3>Get Moving</h3>
+              <p>Read each problem and answer the questions that follow.Write your answers in your notebook.</p>
+              <p>1. There are 16 boys and 24 girls. If they will be grouped separately in teams with the same number, what is the bigges number of children in a group?
+              <br>a.  What is asked for in the problem?
+              <br>b.  What facts are given?
+              <br>c.  How will you solve the problem? 
+              <br>d.  What is the answer to the problem? 
+              </p>
+
+              <p>
+                2.  Mang Andoy is going to put eggs in trays of 6 eggs and 12 eggs. What is the smallest number of eggs that Mang Andoy can put using the trays?
+                <br>a.  How will you solve the problem?
+                <br>b.  What is the answer to the problem?
+              </p>
+
+
+              <h3>Apply Your Skills</h3>
+              <p>Challenge yourself by solving these problems. Write your answers in your notebook.
+
+              <br>1.  What is the smallest number of avocados that can be placed in baskets with 50 and 75 pieces?
+
+              <br>2.  What is the largest nmber of pechay and cabbage plants that can be planted in rows of equal number if there are 60 pechay and 80 cabbage plants?
+
+              <br>3.  Mary has some chocolates. If she shares them equally among 4 friends or 5 friends, there are always 2 extra chocolates lefy. What i sthe possible number of chocolates Mary could have?
+
+              <br>4.  Biscuits are sold in packs of 10, 15, and 20 pieces. How can Lorena buy 90 pieces of biscuits? List all posibble answers.
+              </p>
+              
+              <img src="../images/x.jpg" style="max-width: 100%" />
+            </div>
+      <div>
+        <br><br>
+        <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+      </div>
+    </div>
+  </div>
+  </div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
