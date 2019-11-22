@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.wawas" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>MathApp|SJES</name>
+    <description>
+        Educational App
+    </description>
+    <author email="osus@gmail.com" href="http://phonegap.com">
+        Joebert Mangao
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
