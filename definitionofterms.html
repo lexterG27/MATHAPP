@@ -12,6 +12,35 @@
 
 <style>
 
+
+* {
+  box-sizing: border-box;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -63,6 +92,8 @@ body {
   background-color: #ffffff;
 }
 
+
+
 </style>
   <div data-role="page">
     <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
@@ -73,501 +104,503 @@ body {
       <div data-role="content" role="main">
             <img src="images/headerfinal.png"/>
 
-            <div data-content-theme="b">
-             <div data-role="collapsible" data-expanded-icon="flat-calendar" data-collapsed="false" data-theme="a">
-            <button class="collapsible" data-theme="b">Acute Angle</button>
+
+
+            <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for keyword" title="Type in a name" />
+
+            <ul data-role="listview" data-inset="true" id="myUL">
+            <li class="collapsible"><a href="#" hidden>Acute Angle</a></li>
             <div class="content">
             <p>An Angle with measure between zero degress and 90 degrees</p>
               <img src="defterms/acuteangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="b">Acute Triangle</button>
+            <li class="collapsible"><a href="#" hidden>Acute Triangle</a></li>
             <div class="content">
             <p>Triangle with all interior angles measuring less than 90 degrees.</p>
-          <img src="defterms/acutetriangle.jpg" style="max-width: 100%">
+            <img src="defterms/acutetriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="b">Addend</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Addend</a></li>
             <div class="content">
               <p>A number used in the mathematical operation of addition (e.g. 6+8 =14, 6, and 8 are addends)</p>
             </div>
 
-             <button class="collapsible" data-theme="d">Additive Inverse</button>
+             <li class="collapsible" data-theme="d"><a href="#" hidden>Additive Inverse</a></li>
             <div class="content">
               <p>A number is what you add to a number to create the sum of zero.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Adjacent Angle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Adjacent Angle</a></li>
             <div class="content">
               <p>are named by their endpoints</p>
             </div>
 
-
-            <button class="collapsible" data-theme="d">Acute Triangle</button>
-            <div class="content">
-            <img src="defterms/acutetriangle.jpg" style="max-width: 100%">
-            </div>
-
-            <button class="collapsible" data-theme="d">Angle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Angle</a></li>
             <div class="content">
               <p>The space usually measured in degrees between two intersecting lines or surfaces at or close to the point where they meet.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Area</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Area</a></li>
             <div class="content">
               <p>A flat, or plane figure is the number of unit squares that can be contained within it. The unit square is usually some standard unit, like a square meter, a square foot, or a square inch.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Bar Graph</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Bar Graph</a></li>
             <div class="content">
               <p>A representation of the length of either vertical or horizontal bars used to enumerate and compare data.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Benchmark</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Benchmark</a></li>
             <div class="content">
               <p>A commonly known point of reference from which measurements may be made. (ex. four quarters make a whole).</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Benchmark Fraction</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Benchmark Fraction</a></li>
             <div class="content">
               <p>A commonly known fraction that serves as a meaningful reference point for measurement comparison.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Bundling/Unbundling</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Bundling/Unbundling</a></li>
             <div class="content">
               <p>Putting smaller units together (or apart) to make a larger (smaller) one.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Common Denominator</button>
+            
+
+            
+
+            
+
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Common Denominator</a></li>
             <div class="content">
               <p>A number divisible by all of the denominators in a set of fractions.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Common Factor</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Common Factor</a></li>
             <div class="content">
               <p>A whole number that divies without remainder into two or more non-zero numbers.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Common Multiple</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Common Multiple</a></li>
             <div class="content">
               <p>A whole-number multiple of two or more given numbers.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Complex Fractions</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Complex Fractions</a></li>
             <div class="content">
               <p>Is a fraction where the numerator, denominator, or both contain a fraction.</p>
             </div>
 
 
-            <button class="collapsible" data-theme="b">Complimentary Angles</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Complimentary Angles</a></li>
             <div class="content">
               <p>Any two angles whose measures have a sum of 90 degrees.</p>
                <img src="defterms/complimentaryangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="d">Compound Fractions</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Compound Fractions</a></li>
             <div class="content">
               <p>a fraction in which either the numerator or the denominator, or both, contain one or more fractions.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Cube Root</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Cube Root</a></li>
             <div class="content">
               <p>is the number that multiplies by itself three times in order to create a cubic value.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Decimal</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Decimal</a></li>
             <div class="content">
               <p>A fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point.</p>
             </div>
 
 
-            <button class="collapsible" data-theme="b">Decimal Fraction</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Decimal Fraction</a></li>
             <div class="content">
               <p>A proper fraction whose denominator is a power of 10.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Decimal Number</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Decimal Number</a></li>
             <div class="content">
               <p>can be defined as a number whose whole number part and the fractional part is separated by a decimal point.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Denominator</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Denominator</a></li>
             <div class="content">
               <p>the number below the line in a common fraction; a divisor.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Direct Proportion</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Direct Proportion</a></li>
             <div class="content">
               <p>as one quantity increase, the other quantity increase at the same rate and vice versa.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Dissimilar Fractions</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Dissimilar Fractions</a></li>
             <div class="content">
               <p>are fractions that do not have the same denominators.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Equilateral Triangle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Equilateral Triangle</a></li>
             <div class="content">
               <p>A triangle with three equal sides.</p>
                <img src="defterms/equilateraltriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="d">Exponential Form</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Exponential Form</a></li>
             <div class="content">
               <p>A mathematical representation of a term raised to a power.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Factor</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Factor</a></li>
             <div class="content">
              <p>The value that can be divided into another value with no remainder.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Fluency</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Fluency</a></li>
             <div class="content">
              <p>The efficient automatic recall of addition, subtraction, multiplication and division facts.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Fractions</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Fractions</a></li>
             <div class="content">
              <p>Describes how many parts of a certain size there are, for example, one-half, eight-fifths, three-quarters Numerators and denominators are also used in fractions that are not common, including compound fractions, complex fractions, and mixed numerals.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Geometric Solid</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Geometric Solid</a></li>
             <div class="content">
              <p>A three-dimensional shape bounded by surfaces.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Halfway</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Halfway</a></li>
             <div class="content">
              <p>with reference to a number line, the midpoint between two numbers.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Hash Mark</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Hash Mark</a></li>
             <div class="content">
              <p>The marks on a ruler or other measurement tool.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Hexagon</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Hexagon</a></li>
             <div class="content">
              <p>A polygon with siz sides.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Improper Fraction</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Improper Fraction</a></li>
             <div class="content">
              <p>A fraction in which the numerator is greater than the denominator.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Inverse Proportion</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Inverse Proportion</a></li>
             <div class="content">
              <p>one quantity increases as the other quantity decreases at the same rate, and vice versa.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Inequality</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Inequality</a></li>
             <div class="content">
              <p>A statement relating two or more quantities or values that are not equal using words or symbols.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Integers</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Integers</a></li>
             <div class="content">
              <p>Composed of positive and negative counting numbers and zero.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Interval</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Interval</a></li>
             <div class="content">
              <p>A set of numbers or values betwee and, in some cases, including two given values.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Isosceles Triangle</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Isosceles Triangle</a></li>
             <div class="content">
              <p>A triangle that has two or more congruent sides.</p>
               <img src="defterms/isoscelestriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="e">Line Graph</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Line Graph</a></li>
             <div class="content">
              <p>A representation used to show change over an interval, with the data points connected by line segments.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Linear Expression</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Linear Expression</a></li>
             <div class="content">
              <p>A collection of numbers, symbols, operations, and two or fewer variables with a degree of one.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Mean</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Mean</a></li>
             <div class="content">
              <p>A measure of center where the sum of a set of numbers is divided by the number of elements in the set.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Median</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Median</a></li>
             <div class="content">
              <p>A measure of center that identifies a value such that half the data is above the value and half the data is below the value when the data is listed in order.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Metric System</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Metric System</a></li>
             <div class="content">
              <p>A measurement system based on the base-ten numeration system.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Mixed Number</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Mixed Number</a></li>
             <div class="content">
              <p>A number represented by a whole number next to a fraction, and is equal to the sumof the whole number and the fraction.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Mixed Fraction</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Mixed Fraction</a></li>
             <div class="content">
              <p>Is a whole number and a proper fraction combined.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Mode</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Mode</a></li>
             <div class="content">
              <p>A measure of center that is the value or values that occur(s) frequently in a given set of numbers.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Multiple of a Number</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Multiple of a Number</a></li>
             <div class="content">
              <p>A number into which a given number may be divided with no remainder.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Multiplier</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Multiplier</a></li>
             <div class="content">
              <p>The factor representing the number of units.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Negative Integers</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Negative Integers</a></li>
             <div class="content">
              <p>A negative integer is one of the integers ..., -4 , -3 , -2 , -1.Integers less than zero are called negative integers. These integers are found on the left side of zero on the number line.
 </p>
             </div>
 
-            <button class="collapsible" data-theme="e">Numerator</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Numerator</a></li>
             <div class="content">
              <p>The number of equal parts of a total number of parts in a fraction.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Numerical Expression</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Numerical Expression</a></li>
             <div class="content">
              <p>An angle whose measure is greater than 90 degrees and less than 180 degrees.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Obtuse Angle</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Obtuse Angle</a></li>
             <div class="content">
              <p>An angle whose measure is greater thatn 90 degrees and less than 180 degrees.</p>
               <img src="defterms/obtuseangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="b">Obtuse Triangle</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Obtuse Triangle</a></li>
             <div class="content">
              <p>A triangle with an interior obtuse angle</p>
               <img src="defterms/obtusetriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="b">Ordered Pair</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Ordered Pair</a></li>
             <div class="content">
              <p>A pair of numbers used to locate and describe points in the coordinate plane in the form (x,y)</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Ordinal Number</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Ordinal Number</a></li>
             <div class="content">
              <p>A whole number that names the position of an object in a set.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Parallelogram</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Parallelogram</a></li>
             <div class="content">
              <p>A four-sided plane rectilinear figure with opposite sides parallel.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Parallel Lines</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Parallel Lines</a></li>
             <div class="content">
              <p>Lines in the same plane that never intersect and are always equidistant.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Partitive Proportion</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Partitive Proportion</a></li>
             <div class="content">
              <p>a whole is divided into parts that are proportional to the given ratio.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Pattern</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Pattern</a></li>
             <div class="content">
              <p>constitutes a set of numbers or objects in which all the members are related with each other by a specific rule.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Perimeter</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Perimeter</a></li>
             <div class="content">
              <p>The continuous line forming the boundary of a closed geometric figure.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Perpendicular Lines</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Perpendicular Lines</a></li>
             <div class="content">
              <p>Two lines that intersect to form right angles.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Place Value</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Place Value</a></li>
             <div class="content">
              <p>The value of a numerical based on the position of each digit in the number.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Place Figure</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Place Figure</a></li>
             <div class="content">
              <p>Are flat two-dimensional shape, plane figure can be made of straight lines, curved lines, or both straight and curved lines.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Perpendicular</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Perpendicular</a></li>
             <div class="content">
              <p>at an angle of 90° to a given line, plane, or surface.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Positive Integers</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Positive Integers</a></li>
             <div class="content">
              <p>The positive integers are the numbers 1, 2, 3. Integers greater than zero are called positive integers. These integers are found on the right side of zero on the number line.
             </p>
             </div>
 
-            <button class="collapsible" data-theme="e">Prime Factor</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Prime Factor</a></li>
             <div class="content">
              <p>All the factors on a quantity that are only divisible by the number one and itself. </p>
             </div>
 
-            <button class="collapsible" data-theme="e">Prime Number</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Prime Number</a></li>
             <div class="content">
              <p>A number that has exactly two different factors, one and itself.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Probability</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Probability</a></li>
             <div class="content">
              <p>The measure of the likelihood of the occurence of an event.</p>
             </div>
 
-             <button class="collapsible" data-theme="b">Proper Fraction</button>
+             <li class="collapsible" data-theme="b"><a href="#" hidden>Proper Fraction</a></li>
             <div class="content">
              <p> a fraction that is less than one, with the numerator less than the denominator.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Quadrilateral</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Quadrilateral</a></li>
             <div class="content">
              <p>A polygon with four sides.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Quotient</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Quotient</a></li>
             <div class="content">
              <p>a result obtained by dividing one quantity by another.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Reciprocal</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Reciprocal</a></li>
             <div class="content">
              <p>a mathematical expression or function so related to another that their product is one; the quantity obtained by dividing the number one by a given quantity.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Rectangular Prism</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Rectangular Prism</a></li>
             <div class="content">
              <p>can be defined as a 3-dimensional solid shape which has six faces that are rectangles.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Reflex Angle</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Reflex Angle</a></li>
             <div class="content">
              <p>An angle that is greater than 180 and less than 360.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Relational Symbol</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Relational Symbol</a></li>
             <div class="content">
              <p>show how numbers or terms of an equation relate to each other.</p>
             </div>
 
-             <button class="collapsible" data-theme="e">Remainder</button>
+             <li class="collapsible" data-theme="e"><a href="#" hidden>Remainder</a></li>
             <div class="content">
              <p>a part of something that is left over when other parts have been completed, used, or dealt with.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Right Angle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Right Angle</a></li>
             <div class="content">
              <p>An angle whose measure is 90 degrees.</p>
               <img src="defterms/rightangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="d">Right Triangle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Right Triangle</a></li>
             <div class="content">
              <p>A triangle that contains a right angle.</p>
               <img src="defterms/righttriangle.jpg" style="max-width: 100%">
             </div>
 
 
-            <button class="collapsible" data-theme="d">Rounding Numbers</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Rounding Numbers</a></li>
             <div class="content">
              <p>rounding means making a number simpler but keeping its value close to what it was.</p>
               <img src="defterms/righttriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="d">Scalene Triangle</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Scalene Triangle</a></li>
             <div class="content">
              <p>A triangle with no congruent sides.</p>
               <img src="defterms/scalenetriangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="e">Scientific Notation</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Scientific Notation</a></li>
             <div class="content">
             <p>A representation of a very large or very small number expressed as the product of a power of 10, abd a decimal number greater than or equal to one and less than 10.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Similar Fractions</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Similar Fractions</a></li>
             <div class="content">
             <p>have the same denominators, as opposed to unlike fractions, which have different denominators.</p>
             </div>
             
-            <button class="collapsible" data-theme="e">Simplest Form</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Simplest Form</a></li>
             <div class="content">
             <p>Fractional: a fraction that has no common factor for the numerator and denominator; Polynomial: ana expression that has no common factors for all terms and no like terms; Radical: there are no perfect square factors contained in the radicand and there are no like terms.</p>
             </div>
 
-            <button class="collapsible" data-theme="e">Standard Notation</button>
+            <li class="collapsible" data-theme="e"><a href="#" hidden>Standard Notation</a></li>
             <div class="content">
             <p>A number written with one digit for each place value in a base ten numeric system.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Supplementary Angles</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Supplementary Angles</a></li>
             <div class="content">
             <p>Two angles whose measures have a sum of 180</p>
              <img src="defterms/supplementaryangle.jpg" style="max-width: 100%">
             </div>
 
-            <button class="collapsible" data-theme="b">Symmetry</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Symmetry</a></li>
             <div class="content">
             <p>A one-to-one correspondence in size, form and arrangement of parts.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Table of Values</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Table of Values</a></li>
             <div class="content">
             <p>A chart that organizes data in rows and columns to illustrate facts and figures.</p>
             </div>
 
-            <button class="collapsible" data-theme="b">Trapezoid</button>
+            <li class="collapsible" data-theme="b"><a href="#" hidden>Trapezoid</a></li>
             <div class="content">
             <p>Is a 4-sided flat shape with straight sides that has a pair of opposite sides parallel.</p>
             </div>
-            <button class="collapsible" data-theme="d">Variable</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Variable</a></li>
             <div class="content">
             <p>A symbol that represents a quantity.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Venn Diagram</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Venn Diagram</a></li>
             <div class="content">
             <p>A representation that uses circles to show relationship between two or more sets.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Volume</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Volume</a></li>
             <div class="content">
             <p>the amount of space that a substance or object occupies, or that is enclosed within a container, especially when great.</p>
             </div>
 
-            <button class="collapsible" data-theme="d">Whole Numbers</button>
+            <li class="collapsible" data-theme="d"><a href="#" hidden>Whole Numbers</a></li>
             <div class="content">
             <p>a number without fractions</p>
             </div>
 
 
 
+            </ul>
 
-            
-
-            </div>
+            <button data-theme="f" id="backtotop" onclick="window.scrollTo(0,0);">Back to Top</button>
           </div>
 
 
@@ -580,7 +613,29 @@ body {
 
   </div>
   </div>
-  
+
+
+<!--Script to Search-->
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -598,23 +653,6 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-
-
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
 </html>
