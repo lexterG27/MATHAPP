@@ -29,7 +29,7 @@
             "explanation"   :   "",
         },
         {
-            "question"      :   "2. Steven prepared dalandan juice for his daughter.He mixed 1/5 cup of dalandan juice and 3/5 cup of water. How many cups of liquid did he mix?",
+            "question"      :   "Steven prepared dalandan juice for his daughter.He mixed 1/5 cup of dalandan juice and 3/5 cup of water. How many cups of liquid did he mix?",
             "image"         :   "",
             "choices"       :   [
                                     "4/10",
@@ -248,8 +248,8 @@
          */
         function processQuestion(choice){
             if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
-                //$('.choice').eq(choice).css({'background-color':'#50D943'});
-                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('.choice').eq(choice).css({'background-color':'#50D943'});
+                $('#explanation').html('<strong></strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
       /* Play sound if correct*/
                 var sound = $("#soundcorrect")[0];     
                 sound.addEventListener('ended', function() {      
@@ -259,7 +259,7 @@
                 score++;
             } else {
                 $('.choice').eq(choice).css({'background-color':'#D92623'});
-                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                $('#explanation').html('<strong></strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
                 /* Play sound if wrong*/
                 var sound = $("#soundwrong")[0];     
                 sound.addEventListener('ended', function() {      
@@ -315,7 +315,8 @@
             $('#mybutton').show();
             $(document).on('click','#mybutton',function(){
                 window.location='quizgrade6easy.html';
-            });  
+            });
+            endGame();  
 
         }
         /**
@@ -329,6 +330,8 @@
                 $(document.createElement('h1')).text("Quiz").appendTo('#frame');
             }
             //add pager and questions
+
+
             if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
                 //add pager
                 $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
@@ -338,7 +341,7 @@
                 if(quiz[0].hasOwnProperty('image') && quiz[0]['image'] != ""){
                     $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
                 }
-                $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('&nbsp;').appendTo('#frame');
+                //$(document.createElement('p')).addClass('explanation').attr('id','explanation').html('&nbsp;').appendTo('#frame');
             
                 //questions holder
                 $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
@@ -409,10 +412,10 @@
           padding:0;
         }
         #submitbutton{
-          background:#3CB371;
+          background:#4b4ffa;
         }
         #submitbutton:hover{
-          background:#3CB371;
+          background:#4b4ffa;
         }
         #explanation{
           margin:0 auto;
@@ -434,6 +437,15 @@
     #mybutton{
       display:none;
     }
+
+
+    /* For Timer */
+    span{
+        color:blue;
+        text-align: center;
+        font-size: 30px;
+        font-family: Elephant;
+    }
     </style>
 
 </head>
@@ -449,11 +461,14 @@
     <!--Content Goes Here-->
     <div data-role="content" role="main">
     
-      <div id="frame" role="content"><img src="images/headerfinal.png" ></div>
+      <div id="frame" role="content"><img src="images/headerfinal.png" ><span><h2><time>00:00:00</time></h2></span></div>
 
+<div style="display:none">
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="clear">clear</button>
+</div>
 <button id="mybutton">Try Again?</button>
-
-
       <!--Footer-->
       <div><br>
         <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
@@ -477,6 +492,50 @@
 </div>
 
 
+<script>
+var h2 = document.getElementsByTagName('h2')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h2.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+function endGame() {
+    clearTimeout(t);
+}
+
+
+/* Start button */
+start.onclick = timer;
+
+/* Stop button */
+
+/* Clear button */
+clear.onclick = function() {
+    h1.textContent = "00:00:00";
+    seconds = 0; minutes = 0; hours = 0;
+}
+</script>
 
 
 </body>
