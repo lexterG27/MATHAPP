@@ -117,9 +117,28 @@ input[type="radio"]{
   color: white;
 }
 
+
+#btn1,#btn2{
+  background-color:white;
+  border:2px solid #4CAF50;
+  border-radius: 8px;
+  padding 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:25px;
+}
 </style>
 
+
 </head>
+
+<script>
+function windowClose(){
+  window.open('about.blank','_self','');
+  window.close();
+}
+</script>
 <body>
   <div data-role="page">
     <div data-role="panel" id="panel" data-position="right" data-theme="e" data-display="push"></div>
@@ -139,10 +158,10 @@ input[type="radio"]{
             <button data-icon="flat-video" data-theme="b" id="apDiv4">Video Tutorials</button>
             <button data-icon="flat-settings" data-theme="d" id="apDiv5">Help</button>
             <button data-icon="flat-man" data-theme="a" id="apDiv6">About</button>
+            <button data-icon="flat-man" data-theme="b" id="exitapp">Exit</button>
           </ul>
-          <br><br>
             <div>
-              <h4 style="color:white">&copy; 2019 - PCNL,Agoo, La Union</h4>  
+              <h4 style="color:white">&copy; 2019 - PCNL, Agoo, La Union<br>(072) 522 1038 | (072) 607 0406</h4>  
             </div>
       </div>
 
@@ -151,7 +170,29 @@ input[type="radio"]{
   </div>
 
 
+<!-- The Modal for Grade 4 -->
+<div id="exitModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3>Are you sure you want to exit the application?</h3>
+    </div>
+    <div class="modal-body">
+      <table width="90%">
+        <tr>
+          <td align="center"><button id="btn1" onclick="windowClose();" >Yes</button></td>
+          <td align="center"><button id="btn2" onclick ="modal.style.display ='none' ";>No</button></td>
+        </tr>
+      </table>           
+    </div>
+    <div class="modal-footer">
+            
+    </div>
+  </div>
+
+</div>
 
 <!--External Contents-->
 <audio id="clicked">
@@ -240,8 +281,6 @@ $(function(){
    });
 });
 
-
-
 </script> 
 
 
@@ -256,6 +295,27 @@ function myFunction() {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
+  }
+}
+</script>
+
+<!--When Modal is Opened for Exit -->
+<script>
+var modal = document.getElementById("exitModal");
+var btn = document.getElementById("exitapp");
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 </script>
